@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Services</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="service-d.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- =========================================================
+     VINTAGE ERA
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =====================================================
+         LOGO
+         ====================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Vintage Era Home">
+            <img src="images/logo.png" alt="Vintage Era Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>Vintage<span class="era">Era</span></h1>
+            <p>Antique &amp; Vintage Furniture</p>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         NAVIGATION
+         ====================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+                    <span>Home 1 — Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+                    <span>Home 2 — Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html" class="active">Services</a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <!-- BLOGS -->
+
+            <li>
+              <a href="blog.html">Blogs</a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- MOBILE CTA -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Viewing</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =====================================================
+         HEADER ACTIONS
+         ====================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- DESKTOP CTA -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Viewing</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="wood-repair-hero-section" id="wood-repair-hero">
+      <div class="wood-repair-hero-container">
+        <!-- Left: Hero Content -->
+        <div class="wood-repair-hero-content">
+          <p class="section-tagline">Vintage Era · Restoration Services</p>
+
+          <h1 class="wood-repair-hero-title">
+            Wood Repair &
+            <span>Structural Care</span>
+          </h1>
+
+          <p class="wood-repair-hero-description">
+            Protect the strength, character, and craftsmanship of your treasured
+            antique furniture with thoughtful repairs that respect its original
+            design and history.
+          </p>
+
+          <div class="wood-repair-hero-actions">
+            <a href="contact.html" class="wood-repair-hero-primary">
+              <span>Request a Consultation</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="#wood-repair-expertise" class="wood-repair-hero-secondary">
+              <span>Explore Our Expertise</span>
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="wood-repair-hero-note">
+            <span class="wood-repair-hero-note-line"></span>
+            <span>Preserving Strength. Honouring History.</span>
+          </div>
+        </div>
+
+        <!-- Right: Hero Image -->
+        <div class="wood-repair-hero-visual">
+          <img
+            src="images/hero-5.png"
+            alt="Traditional wooden furniture receiving careful structural restoration"
+            fetchpriority="high"
+          />
+
+          <div class="wood-repair-hero-image-caption">
+            <i data-lucide="hammer" aria-hidden="true"></i>
+            <div>
+              <span>Our Craft</span>
+              <p>Careful repairs. Lasting character.</p>
+            </div>
+          </div>
+
+          <div class="wood-repair-hero-image-index">
+            <span>01</span>
+            <span class="wood-repair-hero-index-line"></span>
+            <span>Wood Restoration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wood-damage-section" id="wood-damage">
+      <div class="wood-damage-container">
+        <!-- Centered Heading -->
+        <div class="wood-damage-heading">
+          <p class="section-tagline">Understanding Antique Wood</p>
+
+          <h2 class="wood-damage-title">
+            When Time Leaves
+            <span>Its Mark on Wood</span>
+          </h2>
+
+          <p class="wood-damage-description">
+            Years of use, changing environments, and natural ageing can affect
+            the strength of antique furniture. Recognising these issues early
+            helps us choose the right approach to preserving each piece.
+          </p>
+        </div>
+
+        <!-- Damage Feature -->
+        <div class="wood-damage-feature">
+          <div class="wood-damage-feature-image">
+            <img
+              src="images/understanding.png"
+              alt="Close-up of aged antique wood showing wear and structural damage"
+              loading="lazy"
+            />
+
+            <div class="wood-damage-image-label">
+              <i data-lucide="scan-search" aria-hidden="true"></i>
+              <span>Every detail tells a story</span>
+            </div>
+          </div>
+
+          <div class="wood-damage-feature-content">
+            <span class="wood-damage-feature-number">01 / ASSESSMENT</span>
+
+            <h3>Every Repair Begins with Understanding</h3>
+
+            <p>
+              A loose joint, a visible crack, or a weakened frame can have
+              different causes. We assess the furniture's construction,
+              materials, and condition before recommending suitable repairs.
+            </p>
+
+            <div class="wood-damage-assessment-points">
+              <div>
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Identify visible and underlying concerns</span>
+              </div>
+
+              <div>
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Understand original construction methods</span>
+              </div>
+
+              <div>
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Prioritise appropriate, sensitive repairs</span>
+              </div>
+            </div>
+
+            <a href="contact.html" class="wood-damage-feature-link">
+              <span>Discuss Your Furniture</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Common Damage Cards -->
+        <div class="wood-damage-grid">
+          <article class="wood-damage-card">
+            <div class="wood-damage-card-image">
+              <img
+                src="images/loose.png"
+                alt="Traditional wooden chair with joints requiring repair"
+                loading="lazy"
+              />
+              <span class="wood-damage-card-number">01</span>
+            </div>
+
+            <div class="wood-damage-card-content">
+              <div class="wood-damage-card-icon">
+                <i data-lucide="unplug" aria-hidden="true"></i>
+              </div>
+
+              <h3>Loose Joints</h3>
+
+              <p>
+                Movement between joined components can make chairs, tables, and
+                cabinets unstable and may worsen with continued use.
+              </p>
+            </div>
+          </article>
+
+          <article class="wood-damage-card">
+            <div class="wood-damage-card-image">
+              <img
+                src="images/cracks.png"
+                alt="Close-up of a crack in aged antique wood"
+                loading="lazy"
+              />
+              <span class="wood-damage-card-number">02</span>
+            </div>
+
+            <div class="wood-damage-card-content">
+              <div class="wood-damage-card-icon">
+                <i data-lucide="git-branch" aria-hidden="true"></i>
+              </div>
+
+              <h3>Cracks & Splits</h3>
+
+              <p>
+                Age, moisture changes, and stress can contribute to cracks that
+                need careful assessment before repair.
+              </p>
+            </div>
+          </article>
+
+          <article class="wood-damage-card">
+            <div class="wood-damage-card-image">
+              <img
+                src="images/weakend.png"
+                alt="Antique wooden furniture frame with signs of structural wear"
+                loading="lazy"
+              />
+              <span class="wood-damage-card-number">03</span>
+            </div>
+
+            <div class="wood-damage-card-content">
+              <div class="wood-damage-card-icon">
+                <i data-lucide="armchair" aria-hidden="true"></i>
+              </div>
+
+              <h3>Weakened Frames</h3>
+
+              <p>
+                Worn supports and weakened structural components can affect the
+                stability and everyday usability of antique furniture.
+              </p>
+            </div>
+          </article>
+
+          <article class="wood-damage-card">
+            <div class="wood-damage-card-image">
+              <img
+                src="images/damage.png"
+                alt="Damaged carved wooden detail on an antique furniture piece"
+                loading="lazy"
+              />
+              <span class="wood-damage-card-number">04</span>
+            </div>
+
+            <div class="wood-damage-card-content">
+              <div class="wood-damage-card-icon">
+                <i data-lucide="puzzle" aria-hidden="true"></i>
+              </div>
+
+              <h3>Damaged Components</h3>
+
+              <p>
+                Missing, chipped, or damaged wooden elements may require
+                carefully considered repairs to preserve the original design.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+<section class="wood-character-section">
+  <div class="wood-character-container">
+
+    <div class="wood-character-heading">
+      <p class="section-tagline">The Beauty of Authenticity</p>
+      <h2 class="wood-character-title">
+        Every Mark Has a Story.
+        <span>Every Detail Deserves Care.</span>
+      </h2>
+      <p class="wood-character-intro">
+        Antique wood carries the traces of time, traditional craftsmanship,
+        and generations of use. Our approach honours these qualities instead
+        of making every piece look new.
+      </p>
+    </div>
+
+    <div class="wood-character-layout">
+
+      <div class="wood-character-main-image">
+        <img
+          src="images/beauty.png"
+          alt="Rich natural grain and aged patina of antique wooden furniture"
+          loading="lazy"
+        />
+
+        <div class="wood-character-image-caption">
+          <span class="wood-character-caption-number">01</span>
+          <p>The character of naturally aged wood</p>
+        </div>
+      </div>
+
+      <div class="wood-character-content">
+
+        <article class="wood-character-point">
+          <span class="wood-character-number">01</span>
+          <div>
+            <h3>Natural Grain & Texture</h3>
+            <p>
+              The patterns, tones, and textures of aged timber give
+              every antique its own identity. We take these details
+              into account when planning a repair.
+            </p>
+          </div>
+        </article>
+
+        <article class="wood-character-point">
+          <span class="wood-character-number">02</span>
+          <div>
+            <h3>The Beauty of Patina</h3>
+            <p>
+              Years of use can create a distinctive surface character.
+              Where appropriate, we aim to retain this sense of age
+              rather than remove it unnecessarily.
+            </p>
+          </div>
+        </article>
+
+        <article class="wood-character-point">
+          <span class="wood-character-number">03</span>
+          <div>
+            <h3>Original Craftsmanship</h3>
+            <p>
+              Traditional joinery, carved details, and handcrafted
+              features deserve thoughtful treatment that respects
+              how the furniture was originally made.
+            </p>
+          </div>
+        </article>
+
+        <article class="wood-character-point">
+          <span class="wood-character-number">04</span>
+          <div>
+            <h3>Repairs That Belong</h3>
+            <p>
+              When a repair is needed, our aim is to complement
+              the existing piece so that its restored elements
+              sit naturally alongside its original details.
+            </p>
+          </div>
+        </article>
+
+        <a href="contact.html" class="wood-character-link">
+          Talk to Our Restoration Team
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="wood-character-quote">
+      <span class="wood-character-quote-icon">
+        <i data-lucide="quote" aria-hidden="true"></i>
+      </span>
+      <p>
+        Our goal is not to erase the years, but to preserve
+        what makes each piece worth passing on.
+      </p>
+      <span class="wood-character-quote-label">
+        The Vintage Era Philosophy
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<section class="wood-approach-section">
+  <div class="wood-approach-container">
+
+    <div class="wood-approach-heading">
+      <p class="section-tagline">A Thoughtful Process</p>
+      <h2 class="wood-approach-title">
+        From Careful Assessment
+        <span>to Considered Restoration.</span>
+      </h2>
+      <p class="wood-approach-intro">
+        Every antique has its own construction, history, and needs.
+        Our process begins by understanding the piece and choosing
+        an approach that respects its original character.
+      </p>
+    </div>
+
+    <div class="wood-approach-main">
+
+      <div class="wood-approach-visual">
+        <img
+          src="images/approch.jpeg"
+          alt="Antique wooden furniture being carefully assessed in a restoration workshop"
+          loading="lazy"
+        />
+
+        <div class="wood-approach-image-label">
+          <span class="wood-approach-image-icon">
+            <i data-lucide="scan-search" aria-hidden="true"></i>
+          </span>
+          <div>
+            <span class="wood-approach-label-small">
+              Our guiding principle
+            </span>
+            <p>Understand first. Restore with care.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wood-approach-steps">
+
+        <article class="wood-approach-step">
+          <div class="wood-approach-step-marker">
+            <span>01</span>
+          </div>
+          <div class="wood-approach-step-content">
+            <span class="wood-approach-step-label">
+              Initial Assessment
+            </span>
+            <h3>Understand the Piece</h3>
+            <p>
+              We examine the furniture's structure, joints, visible
+              damage, wood grain, and existing finish to understand
+              its condition before recommending repairs.
+            </p>
+          </div>
+        </article>
+
+        <article class="wood-approach-step">
+          <div class="wood-approach-step-marker">
+            <span>02</span>
+          </div>
+          <div class="wood-approach-step-content">
+            <span class="wood-approach-step-label">
+              Repair Planning
+            </span>
+            <h3>Choose the Right Approach</h3>
+            <p>
+              Based on the assessment, we identify suitable repair
+              methods and discuss the work required, with preservation
+              of original material as an important consideration.
+            </p>
+          </div>
+        </article>
+
+        <article class="wood-approach-step">
+          <div class="wood-approach-step-marker">
+            <span>03</span>
+          </div>
+          <div class="wood-approach-step-content">
+            <span class="wood-approach-step-label">
+              Careful Craftsmanship
+            </span>
+            <h3>Repair with Precision</h3>
+            <p>
+              Structural concerns are addressed with care, using
+              methods appropriate to the piece and paying attention
+              to its original details and character.
+            </p>
+          </div>
+        </article>
+
+        <article class="wood-approach-step">
+          <div class="wood-approach-step-marker">
+            <span>04</span>
+          </div>
+          <div class="wood-approach-step-content">
+            <span class="wood-approach-step-label">
+              Final Review
+            </span>
+            <h3>Review Every Detail</h3>
+            <p>
+              We review the completed work, paying attention to
+              stability, the quality of the repair, and how the
+              restored areas relate to the original furniture.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="wood-approach-footer">
+      <div class="wood-approach-footer-copy">
+        <span class="wood-approach-footer-icon">
+          <i data-lucide="hand-heart" aria-hidden="true"></i>
+        </span>
+        <div>
+          <h3>Every Piece Deserves an Individual Approach</h3>
+          <p>
+            We consider the age, condition, construction, and character
+            of your furniture before deciding how it should be repaired.
+          </p>
+        </div>
+      </div>
+
+      <a href="contact.html" class="wood-approach-cta">
+        Discuss Your Furniture
+        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="wood-repair-cta-section">
+  <div class="wood-repair-cta-container">
+
+    <div class="wood-repair-cta-frame">
+
+      <span class="wood-repair-cta-icon">
+        <i data-lucide="armchair" aria-hidden="true"></i>
+      </span>
+
+      <p class="section-tagline">
+        Your Furniture, Our Craftsmanship
+      </p>
+
+      <h2 class="wood-repair-cta-title">
+        Give Your Antique a Future
+        <span>Worth Preserving.</span>
+      </h2>
+
+      <p class="wood-repair-cta-description">
+        Whether your cherished piece needs structural attention or
+        thoughtful wood repair, let us help you explore the right
+        approach to preserving its character for years to come.
+      </p>
+
+      <div class="wood-repair-cta-actions">
+        <a
+          href="contact.html"
+          class="wood-repair-cta-primary"
+        >
+          Request a Consultation
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="products.html"
+          class="wood-repair-cta-secondary"
+        >
+          Explore Our Collection
+          <i data-lucide="arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <p class="wood-repair-cta-note">
+        <i data-lucide="heart-handshake" aria-hidden="true"></i>
+        <span>Preserving the past. Caring for the future.</span>
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- =========================================================
+     VINTAGE ERA
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =====================================================
+         BRAND
+         ====================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Vintage Era Home">
+              <img src="images/logo.png" alt="Vintage Era Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>Vintage<span class="era">Era</span></h1>
+
+              <p>Antique &amp; Vintage Furniture</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            Discover carefully curated antique and vintage furniture that
+            carries the character, craftsmanship, and stories of remarkable
+            eras.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" aria-label="Pinterest" title="Pinterest">
+              <i data-lucide="pin" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="mailto:hello@vintageera.com"
+              aria-label="Email"
+              title="Email"
+            >
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         QUICK LINKS
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="blog.html">Blogs</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         COLLECTIONS
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Collections</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#victorian"> Victorian Era </a>
+            </li>
+
+            <li>
+              <a href="products.html#edwardian"> Edwardian Era </a>
+            </li>
+
+            <li>
+              <a href="products.html#art-deco"> Art Deco </a>
+            </li>
+
+            <li>
+              <a href="products.html#mid-century"> Mid-Century </a>
+            </li>
+
+            <li>
+              <a href="products.html#colonial"> Colonial </a>
+            </li>
+
+            <li>
+              <a href="products.html#french"> French Provincial </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         RESTORATION
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Restoration</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#assessment"> Furniture Assessment </a>
+            </li>
+
+            <li>
+              <a href="services.html#repair"> Wood Repair </a>
+            </li>
+
+            <li>
+              <a href="services.html#refinishing"> Refinishing </a>
+            </li>
+
+            <li>
+              <a href="services.html#upholstery"> Upholstery </a>
+            </li>
+
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming Soon..... </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         CONTACT
+         ====================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Visit Us</h3>
+
+          <ul>
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Hyderabad, India </span>
+            </li>
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+919876543210"> +91 98765 43210 </a>
+            </li>
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:hello@vintageera.com"> hello@vintageera.com </a>
+            </li>
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 10 AM – 7 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#appointment" class="footer-book-btn">
+            <span>Book a Viewing</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =====================================================
+       FOOTER BOTTOM
+       ====================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+          <span class="footer-brand-name">
+            Vintage<span class="era">Era</span> </span
+          >. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms &amp; Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+    <script src="service-d.js"></script>
+  </body>
+</html>

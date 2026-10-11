@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Contact</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- =========================================================
+     VINTAGE ERA
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =====================================================
+         LOGO
+         ====================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Vintage Era Home">
+            <img src="images/logo.png" alt="Vintage Era Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>Vintage<span class="era">Era</span></h1>
+            <p>Antique &amp; Vintage Furniture</p>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         NAVIGATION
+         ====================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+                    <span>Home 1 — Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+                    <span>Home 2 — Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <!-- BLOGS -->
+
+            <li>
+              <a href="blog.html">Blogs</a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html" class="active">Contact</a>
+            </li>
+          </ul>
+
+          <!-- MOBILE CTA -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Viewing</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =====================================================
+         HEADER ACTIONS
+         ====================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- DESKTOP CTA -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Viewing</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: CONTACT HERO -->
+    <section class="ve-contact-hero" id="contact-hero">
+      <div class="ve-contact-hero-container">
+        <!-- Left Content -->
+        <div class="ve-contact-hero-content">
+          <p class="ve-contact-hero-eyebrow">
+            <span></span>
+            WE WOULD LOVE TO HEAR FROM YOU
+          </p>
+
+          <h1 class="ve-contact-hero-title">
+            Every Great Story
+            <span>Begins with a Conversation.</span>
+          </h1>
+
+          <p class="ve-contact-hero-description">
+            Whether you are searching for a timeless heirloom, exploring our
+            collection, or caring for a treasured antique, we are here to help
+            you find the right piece and the right story.
+          </p>
+
+          <div class="ve-contact-hero-actions">
+            <a href="#ve-contact-booking" class="ve-contact-hero-primary">
+              Book a Viewing
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#ve-contact-details" class="ve-contact-hero-secondary">
+              Find Our Showroom
+              <i data-lucide="map-pin"></i>
+            </a>
+          </div>
+
+          <div class="ve-contact-hero-note">
+            <i data-lucide="calendar-check"></i>
+            <span>Private viewings by appointment</span>
+          </div>
+        </div>
+
+        <!-- Right Visual -->
+        <div class="ve-contact-hero-visual">
+          <div class="ve-contact-hero-image">
+            <img
+              src="images/hero-8.jpeg"
+              alt="Antique furniture displayed in an elegant vintage showroom"
+            />
+
+            <div class="ve-contact-hero-image-caption">
+              <span class="ve-contact-hero-caption-line"></span>
+              <span>A PLACE FOR TIMELESS PIECES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: HOW WE CAN HELP -->
+    <section class="ve-contact-help" id="contact-help">
+      <div class="ve-contact-help-container">
+        <!-- Section Heading -->
+        <div class="ve-contact-help-heading">
+          <p class="ve-contact-help-eyebrow">HERE FOR EVERY HEIRLOOM</p>
+
+          <h2 class="ve-contact-help-title">
+            How Can We <span>Help You?</span>
+          </h2>
+
+          <p class="ve-contact-help-description">
+            Every piece has a story, and every collector has a reason for
+            seeking it. Tell us what brings you here.
+          </p>
+        </div>
+
+        <!-- Help Cards -->
+        <div class="ve-contact-help-grid">
+          <!-- Card 1 -->
+          <article class="ve-contact-help-card">
+            <div class="ve-contact-help-card-top">
+              <span class="ve-contact-help-number">01</span>
+              <span class="ve-contact-help-icon">
+                <i data-lucide="armchair"></i>
+              </span>
+            </div>
+
+            <div class="ve-contact-help-card-content">
+              <p class="ve-contact-help-category">THE COLLECTION</p>
+
+              <h3>Explore Our Collection</h3>
+
+              <p>
+                Looking for a distinctive antique or a timeless vintage piece?
+                Let us help you discover furniture with character,
+                craftsmanship, and history.
+              </p>
+
+              <a href="products.html" class="ve-contact-help-link">
+                Discover Our Pieces
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="ve-contact-help-card ve-contact-help-card-featured">
+            <div class="ve-contact-help-card-top">
+              <span class="ve-contact-help-number">02</span>
+              <span class="ve-contact-help-icon">
+                <i data-lucide="calendar-check"></i>
+              </span>
+            </div>
+
+            <div class="ve-contact-help-card-content">
+              <p class="ve-contact-help-category">A PERSONAL EXPERIENCE</p>
+
+              <h3>Arrange a Private Viewing</h3>
+
+              <p>
+                Take your time exploring the details, materials, and
+                craftsmanship of a piece in person. Arrange a viewing that suits
+                your schedule.
+              </p>
+
+              <a href="#ve-contact-booking" class="ve-contact-help-link">
+                Book Your Viewing
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="ve-contact-help-card">
+            <div class="ve-contact-help-card-top">
+              <span class="ve-contact-help-number">03</span>
+              <span class="ve-contact-help-icon">
+                <i data-lucide="hammer"></i>
+              </span>
+            </div>
+
+            <div class="ve-contact-help-card-content">
+              <p class="ve-contact-help-category">CARE & PRESERVATION</p>
+
+              <h3>Restoration Enquiries</h3>
+
+              <p>
+                Have a treasured piece that needs attention? Talk to us about
+                thoughtful restoration that respects its original character and
+                craftsmanship.
+              </p>
+
+              <a href="restoration-services.html" class="ve-contact-help-link">
+                Explore Restoration
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: BOOK A VIEWING APPOINTMENT -->
+    <section class="ve-contact-booking" id="ve-contact-booking">
+      <div class="ve-contact-booking-container">
+        <!-- Section Heading -->
+        <div class="ve-contact-booking-heading">
+          <p class="ve-contact-booking-eyebrow">A PERSONAL INVITATION</p>
+
+          <h2 class="ve-contact-booking-title">
+            Make Time for <span>Something Timeless.</span>
+          </h2>
+
+          <p class="ve-contact-booking-intro">
+            Some pieces deserve more than a passing glance. Arrange a private
+            viewing and discover the details, character, and craftsmanship that
+            make each piece special.
+          </p>
+        </div>
+
+        <!-- Main Booking Layout -->
+        <div class="ve-contact-booking-layout">
+          <!-- LEFT: APPOINTMENT FORM -->
+          <div class="ve-contact-booking-form-panel">
+            <div class="ve-contact-booking-form-header">
+              <span class="ve-contact-booking-step">YOUR VISIT · 01</span>
+              <h3>Request an Appointment</h3>
+              <p>Share a few details and let us help plan your visit.</p>
+            </div>
+
+            <form id="ve-viewing-form" class="ve-viewing-form">
+              <div class="ve-viewing-form-grid">
+                <div class="ve-viewing-field">
+                  <label for="ve-viewing-name">Full Name *</label>
+                  <input
+                    type="text"
+                    id="ve-viewing-name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="ve-viewing-field">
+                  <label for="ve-viewing-email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="ve-viewing-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+
+                <div class="ve-viewing-field">
+                  <label for="ve-viewing-phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="ve-viewing-phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+
+                <div class="ve-viewing-field">
+                  <label for="ve-viewing-interest">What Interests You?</label>
+                  <select id="ve-viewing-interest" name="interest">
+                    <option value="">Select an interest</option>
+                    <option value="antique-furniture">Antique Furniture</option>
+                    <option value="vintage-furniture">Vintage Furniture</option>
+                    <option value="specific-piece">A Specific Piece</option>
+                    <option value="restoration">Restoration Services</option>
+                    <option value="general-enquiry">General Enquiry</option>
+                  </select>
+                </div>
+
+                <div class="ve-viewing-field">
+                  <label for="ve-viewing-date">Preferred Date *</label>
+                  <input
+                    type="date"
+                    id="ve-viewing-date"
+                    name="date"
+                    required
+                  />
+                </div>
+
+                <div class="ve-viewing-field">
+                  <label for="ve-viewing-time">Preferred Time *</label>
+                  <select id="ve-viewing-time" name="time" required>
+                    <option value="">Choose a time</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                  </select>
+                </div>
+
+                <div class="ve-viewing-field ve-viewing-field-full">
+                  <label for="ve-viewing-message">
+                    Tell Us More <span>(Optional)</span>
+                  </label>
+                  <textarea
+                    id="ve-viewing-message"
+                    name="message"
+                    rows="4"
+                    placeholder="Tell us about a piece you love or anything we should know before your visit."
+                  ></textarea>
+                </div>
+              </div>
+
+              <p class="ve-viewing-privacy-note">
+                <i data-lucide="shield-check"></i>
+                Your details will be used to respond to your appointment
+                request.
+              </p>
+
+              <button type="submit" class="ve-viewing-submit">
+                Request My Viewing
+                <i data-lucide="arrow-up-right"></i>
+              </button>
+
+              <p
+                class="ve-viewing-feedback"
+                id="ve-viewing-feedback"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+
+          <!-- RIGHT: EDITORIAL CONTENT -->
+          <aside class="ve-contact-booking-aside">
+            <div class="ve-booking-aside-image">
+              <img
+                src="images/contact.jpeg"
+                alt="Antique furniture prepared for a private viewing"
+                loading="lazy"
+              />
+              <span class="ve-booking-image-caption">
+                DISCOVER THE DETAILS IN PERSON
+              </span>
+            </div>
+
+            <div class="ve-booking-aside-content">
+              <p class="ve-booking-aside-eyebrow">A SLOWER WAY TO DISCOVER</p>
+
+              <h3>
+                Take Your Time.<br />
+                Find Your Heirloom.
+              </h3>
+
+              <p>
+                Explore the grain of the wood, the beauty of the patina, and the
+                craftsmanship that cannot be fully appreciated through a
+                photograph.
+              </p>
+
+              <div class="ve-booking-benefit">
+                <span class="ve-booking-benefit-icon">
+                  <i data-lucide="eye"></i>
+                </span>
+                <div>
+                  <h4>Look Closer</h4>
+                  <p>Examine the details and character of each piece.</p>
+                </div>
+              </div>
+
+              <div class="ve-booking-benefit">
+                <span class="ve-booking-benefit-icon">
+                  <i data-lucide="messages-square"></i>
+                </span>
+                <div>
+                  <h4>Talk with Us</h4>
+                  <p>
+                    Discuss your interests and ask questions about our
+                    collection.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONTACT DETAILS & GOOGLE MAPS -->
+    <section class="ve-contact-location" id="ve-contact-details">
+      <div class="ve-contact-location-container">
+        <!-- Section Heading -->
+        <div class="ve-contact-location-heading">
+          <p class="ve-contact-location-eyebrow">COME AND DISCOVER</p>
+
+          <h2 class="ve-contact-location-title">
+            A Place Where <span>Stories Live On.</span>
+          </h2>
+
+          <p class="ve-contact-location-intro">
+            Some things are best experienced in person. Visit us to explore the
+            character, craftsmanship, and history behind our collection.
+          </p>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="ve-contact-location-layout">
+          <!-- LEFT: CONTACT INFORMATION -->
+          <div class="ve-contact-location-info">
+            <!-- Address -->
+            <div class="ve-contact-location-item">
+              <span class="ve-contact-location-icon">
+                <i data-lucide="map-pin"></i>
+              </span>
+
+              <div class="ve-contact-location-item-content">
+                <h4>Our Showroom</h4>
+                <p>
+                  Add your showroom address here. Update this with your actual
+                  business location.
+                </p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="ve-contact-location-item">
+              <span class="ve-contact-location-icon">
+                <i data-lucide="mail"></i>
+              </span>
+
+              <div class="ve-contact-location-item-content">
+                <h4>Email Us</h4>
+                <p>
+                  <a href="mailto:your-email@example.com">
+                    your-email@example.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="ve-contact-location-item">
+              <span class="ve-contact-location-icon">
+                <i data-lucide="phone"></i>
+              </span>
+
+              <div class="ve-contact-location-item-content">
+                <h4>Call Us</h4>
+                <p>
+                  <a href="tel:+910000000000"> +91 00000 00000 </a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Visiting Information -->
+            <div class="ve-contact-location-item">
+              <span class="ve-contact-location-icon">
+                <i data-lucide="calendar-clock"></i>
+              </span>
+
+              <div class="ve-contact-location-item-content">
+                <h4>Private Viewings</h4>
+                <p>
+                  Visits by appointment. Please submit your preferred date and
+                  time using our viewing request form.
+                </p>
+              </div>
+            </div>
+
+            <a href="#ve-contact-booking" class="ve-contact-location-button">
+              Arrange a Viewing
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- RIGHT: GOOGLE MAP -->
+          <div class="ve-contact-location-map-wrap">
+            <div class="ve-contact-location-map-heading">
+              <div>
+                <p class="ve-contact-location-map-eyebrow">FIND YOUR WAY</p>
+                <h3>Find Our Showroom</h3>
+              </div>
+
+              <span class="ve-contact-location-map-mark">
+                <i data-lucide="compass"></i>
+              </span>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.166331989263!2d78.44739318043857!3d17.403803540906477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb974007cc7123%3A0x8aab54dbe557493d!2sCafe%20555%20-%20Aqeeq%20Restaurant!5e0!3m2!1sen!2sin!4v1791713476745!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+
+            <div class="ve-contact-location-map-footer">
+              <i data-lucide="navigation"></i>
+              <span>We look forward to welcoming you to Vintage Era.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FINAL CONTACT CTA -->
+    <section class="ve-contact-cta" id="ve-contact-final-cta">
+      <div class="ve-contact-cta-container">
+        <div class="ve-contact-cta-frame">
+          <span class="ve-contact-cta-emblem" aria-hidden="true">
+            <i data-lucide="armchair"></i>
+          </span>
+
+          <p class="ve-contact-cta-eyebrow">YOUR NEXT CHAPTER BEGINS HERE</p>
+
+          <h2 class="ve-contact-cta-title">
+            Some Things Are Worth
+            <span>Seeing in Person.</span>
+          </h2>
+
+          <p class="ve-contact-cta-description">
+            Discover timeless craftsmanship, explore our collection, and find a
+            piece that feels like it was always meant to be yours.
+          </p>
+
+          <div class="ve-contact-cta-actions">
+            <a href="#ve-contact-booking" class="ve-contact-cta-primary">
+              Book a Viewing
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="products.html" class="ve-contact-cta-secondary">
+              Explore Collection
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="ve-contact-cta-footer">
+            <span class="ve-contact-cta-footer-line"></span>
+            <p>VINTAGE ERA · ANTIQUE & VINTAGE FURNITURE</p>
+            <span class="ve-contact-cta-footer-line"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     VINTAGE ERA
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =====================================================
+         BRAND
+         ====================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Vintage Era Home">
+              <img src="images/logo.png" alt="Vintage Era Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>Vintage<span class="era">Era</span></h1>
+
+              <p>Antique &amp; Vintage Furniture</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            Discover carefully curated antique and vintage furniture that
+            carries the character, craftsmanship, and stories of remarkable
+            eras.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" aria-label="Pinterest" title="Pinterest">
+              <i data-lucide="pin" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="mailto:hello@vintageera.com"
+              aria-label="Email"
+              title="Email"
+            >
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         QUICK LINKS
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="blog.html">Blogs</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         COLLECTIONS
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Collections</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#victorian"> Victorian Era </a>
+            </li>
+
+            <li>
+              <a href="products.html#edwardian"> Edwardian Era </a>
+            </li>
+
+            <li>
+              <a href="products.html#art-deco"> Art Deco </a>
+            </li>
+
+            <li>
+              <a href="products.html#mid-century"> Mid-Century </a>
+            </li>
+
+            <li>
+              <a href="products.html#colonial"> Colonial </a>
+            </li>
+
+            <li>
+              <a href="products.html#french"> French Provincial </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         RESTORATION
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Restoration</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#assessment"> Furniture Assessment </a>
+            </li>
+
+            <li>
+              <a href="services.html#repair"> Wood Repair </a>
+            </li>
+
+            <li>
+              <a href="services.html#refinishing"> Refinishing </a>
+            </li>
+
+            <li>
+              <a href="services.html#upholstery"> Upholstery </a>
+            </li>
+
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming Soon..... </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         CONTACT
+         ====================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Visit Us</h3>
+
+          <ul>
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Hyderabad, India </span>
+            </li>
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+919876543210"> +91 98765 43210 </a>
+            </li>
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:hello@vintageera.com"> hello@vintageera.com </a>
+            </li>
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 10 AM – 7 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#appointment" class="footer-book-btn">
+            <span>Book a Viewing</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =====================================================
+       FOOTER BOTTOM
+       ====================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+          <span class="footer-brand-name">
+            Vintage<span class="era">Era</span> </span
+          >. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms &amp; Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="global.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

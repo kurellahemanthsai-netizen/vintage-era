@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/logo.png" />
+
+    <title>Blogs</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="blog-d.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- =========================================================
+     VINTAGE ERA
+     HEADER
+     ========================================================= -->
+
+<header class="site-header">
+  <div class="header-container">
+    <!-- =====================================================
+         LOGO
+         ====================================================== -->
+
+    <div class="logo">
+      <a href="index.html" aria-label="Vintage Era Home">
+        <img src="images/logo.png" alt="Vintage Era Logo" />
+      </a>
+
+      <div class="logo-text" onclick="window.location.href = 'index.html'">
+        <h1>Vintage<span class="era">Era</span></h1>
+        <p>Antique &amp; Vintage Furniture</p>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         NAVIGATION
+         ====================================================== -->
+
+    <nav class="navbar" aria-label="Primary Navigation">
+      <ul class="nav-links">
+        <!-- HOME -->
+
+        <li class="dropdown">
+          <a href="index.html">
+            <span>Home</span>
+            <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </a>
+
+          <!-- HOME DROPDOWN -->
+
+          <ul class="dropdown-menu">
+            <li>
+              <a href="index.html">
+                <i data-lucide="house" aria-hidden="true"></i>
+                <span>Home 1 — Classic</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="home2.html">
+                <i data-lucide="sparkles" aria-hidden="true"></i>
+                <span>Home 2 — Premium</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ABOUT -->
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <!-- SERVICES -->
+
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+
+        <!-- PRODUCTS -->
+
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+
+        <!-- BLOGS -->
+
+        <li>
+          <a href="blog.html" class="active">Blogs</a>
+        </li>
+
+        <!-- CONTACT -->
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <!-- MOBILE CTA -->
+
+      <div class="mobile-book">
+        <a href="book.html" class="book-btn">
+          <span>Book a Viewing</span>
+
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+         HEADER ACTIONS
+         ====================================================== -->
+
+    <div class="header-buttons">
+      <!-- RTL -->
+
+      <button
+        class="icon-btn"
+        id="rtlToggle"
+        type="button"
+        title="RTL Mode"
+        aria-label="Toggle RTL mode"
+      >
+        <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+      </button>
+
+      <!-- DARK MODE -->
+
+      <button
+        class="icon-btn"
+        id="darkToggle"
+        type="button"
+        title="Dark Mode"
+        aria-label="Toggle dark mode"
+      >
+        <i data-lucide="moon" aria-hidden="true"></i>
+      </button>
+
+      <!-- DESKTOP CTA -->
+
+      <a href="book.html" class="book-btn desktop-book">
+        <span>Book a Viewing</span>
+
+        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+
+      <!-- MOBILE MENU -->
+
+      <button
+        class="icon-btn menu-btn"
+        id="menuToggle"
+        type="button"
+        title="Menu"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main class="article-page">
+  <div class="article-page-container">
+
+    <!-- ARTICLE HEADER -->
+    <header class="article-header">
+    
+
+      <div class="article-category">
+        <i data-lucide="book-open"></i>
+        <span>ANTIQUE GUIDES</span>
+      </div>
+
+      <h1 class="article-title">
+        The Art of Choosing Furniture
+        <span>That Lasts for Generations</span>
+      </h1>
+
+      <p class="article-intro">
+        Beautiful furniture is more than something that fills a room.
+        The right piece carries craftsmanship, character, and memories
+        that can be passed from one generation to the next.
+      </p>
+
+      <div class="article-meta">
+        <div class="article-author">
+          <span class="article-author-icon">
+            <i data-lucide="feather"></i>
+          </span>
+          <div>
+            <span class="article-meta-label">WRITTEN BY</span>
+            <span class="article-meta-value">Vintage Era Journal</span>
+          </div>
+        </div>
+
+        <span class="article-meta-divider"></span>
+
+        <div class="article-meta-item">
+          <i data-lucide="calendar-days"></i>
+          <span>Antique Living</span>
+        </div>
+
+        <span class="article-meta-divider"></span>
+
+        <div class="article-meta-item">
+          <i data-lucide="clock-3"></i>
+          <span>7 min read</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- FEATURED IMAGE -->
+    <figure class="article-featured-image">
+      <img
+        src="images/bolg-d.png"
+        alt="Timeless antique wooden furniture with traditional craftsmanship"
+      />
+      <figcaption>
+        A lasting piece is chosen for its quality, character, and the
+        life it can continue to lead.
+      </figcaption>
+    </figure>
+
+    <!-- ARTICLE + SIDEBAR -->
+    <div class="article-content-layout">
+
+      <!-- MAIN ARTICLE -->
+      <article class="article-main-content">
+
+        <section class="article-section" id="choosing-well">
+          <p class="article-opening">
+            Some pieces of furniture simply belong.
+          </p>
+
+          <p>
+            They feel at home in a new house, remain beautiful as a room
+            evolves, and become more meaningful as the years pass.
+            Choosing furniture that lasts for generations begins with
+            looking beyond its appearance and understanding what makes
+            it worth keeping.
+          </p>
+
+          <p>
+            Whether you are selecting an antique cabinet, a solid wood
+            dining table, or a carefully crafted armchair, a thoughtful
+            choice can become part of your family's story.
+          </p>
+        </section>
+
+        <section class="article-section" id="quality-materials">
+          <div class="article-section-heading">
+            <span class="article-section-number">01</span>
+            <div>
+              <p class="article-section-eyebrow">THE FOUNDATION</p>
+              <h2>Begin with Quality Materials</h2>
+            </div>
+          </div>
+
+          <p>
+            The materials used to create furniture influence its
+            strength, appearance, and ability to age gracefully.
+            Solid wood, carefully selected upholstery, and durable
+            hardware can all contribute to a piece's longevity.
+          </p>
+
+          <p>
+            When examining wooden furniture, look closely at the grain,
+            the condition of the surface, and any signs of cracking,
+            warping, or previous repairs. Different woods age in
+            different ways, so consider the piece's construction and
+            condition rather than judging it by appearance alone.
+          </p>
+
+          <blockquote class="article-quote">
+            <i data-lucide="quote"></i>
+            <p>
+              Lasting beauty begins with materials chosen to be lived
+              with, cared for, and appreciated over time.
+            </p>
+          </blockquote>
+        </section>
+
+        <section class="article-section" id="craftsmanship">
+          <div class="article-section-heading">
+            <span class="article-section-number">02</span>
+            <div>
+              <p class="article-section-eyebrow">THE DETAILS MATTER</p>
+              <h2>Look Beyond the Surface</h2>
+            </div>
+          </div>
+
+          <p>
+            Good craftsmanship is often revealed in the details.
+            Examine how the joints meet, whether drawers move smoothly,
+            whether doors sit correctly, and whether the frame feels
+            stable. Look for thoughtful construction rather than
+            decorative details alone.
+          </p>
+
+          <p>
+            For antique furniture, some wear is expected and may form
+            part of its character. However, loose joints, active wood
+            damage, unstable legs, or poorly executed repairs deserve
+            closer inspection before you make a decision.
+          </p>
+
+          <div class="article-tip">
+            <i data-lucide="scan-search"></i>
+            <div>
+              <h3>What to inspect</h3>
+              <p>
+                Check the joints, underside, drawer runners, hardware,
+                frame stability, and signs of previous restoration.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-section" id="timeless-design">
+          <div class="article-section-heading">
+            <span class="article-section-number">03</span>
+            <div>
+              <p class="article-section-eyebrow">STYLE THAT ENDURES</p>
+              <h2>Choose Character Over Trends</h2>
+            </div>
+          </div>
+
+          <p>
+            Interior trends come and go, but furniture with balanced
+            proportions, thoughtful details, and a strong sense of
+            character can work across changing styles.
+          </p>
+
+          <p>
+            Consider how a piece will fit your home today and whether
+            you can imagine it in a different setting years from now.
+            Victorian silhouettes, Edwardian details, Art Deco geometry,
+            and Mid-Century simplicity each offer a distinct character.
+            The best choice is one that suits your space and feels
+            meaningful to you.
+          </p>
+
+          <p>
+            Rather than matching every item, allow a distinctive
+            furniture piece to become the anchor of a room.
+          </p>
+        </section>
+
+        <section class="article-section" id="history-and-provenance">
+          <div class="article-section-heading">
+            <span class="article-section-number">04</span>
+            <div>
+              <p class="article-section-eyebrow">A STORY WORTH KEEPING</p>
+              <h2>Understand Its History and Condition</h2>
+            </div>
+          </div>
+
+          <p>
+            An antique's history can add meaning to its design and
+            craftsmanship. When available, ask about its approximate
+            age, origin, previous ownership, materials, and restoration
+            history.
+          </p>
+
+          <p>
+            Remember that age alone does not guarantee quality.
+            Provenance documents, when available, can help support a
+            piece's history, while a careful condition assessment helps
+            you understand what it needs today.
+          </p>
+
+          <p>
+            Ask the seller to distinguish original features from
+            later alterations and to explain any known repairs.
+            Clear information makes it easier to choose with confidence.
+          </p>
+        </section>
+
+        <section class="article-section" id="care-and-preservation">
+          <div class="article-section-heading">
+            <span class="article-section-number">05</span>
+            <div>
+              <p class="article-section-eyebrow">PRESERVE ITS BEAUTY</p>
+              <h2>Think About the Care It Will Need</h2>
+            </div>
+          </div>
+
+          <p>
+            Furniture that lasts benefits from the right environment
+            and regular, gentle care. Direct sunlight, excessive
+            moisture, and rapid changes in temperature or humidity
+            can damage wood, finishes, and upholstery.
+          </p>
+
+          <p>
+            Dust surfaces with a soft cloth, use suitable care products,
+            and avoid aggressive cleaning methods that may remove
+            original finishes. Antique pieces may need specialist
+            attention, so seek advice before attempting repairs or
+            refinishing.
+          </p>
+
+          <p>
+            Good preservation is not about making every piece look new.
+            It is about protecting its structure and retaining the
+            details that make it special.
+          </p>
+
+          <a
+            href="restoration-services.html"
+            class="article-inline-link"
+          >
+            <span>Discover our restoration approach</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </section>
+
+        <section class="article-section" id="final-thoughts">
+          <div class="article-section-heading">
+            <span class="article-section-number">06</span>
+            <div>
+              <p class="article-section-eyebrow">A LASTING LEGACY</p>
+              <h2>Choose a Piece You Will Want to Keep</h2>
+            </div>
+          </div>
+
+          <p>
+            The most meaningful furniture choices bring together
+            sound construction, enduring design, honest condition
+            information, and a connection that goes beyond appearance.
+          </p>
+
+          <p>
+            Take your time, inspect carefully, and ask questions.
+            A piece does not need to be flawless to be worth preserving;
+            it needs to be right for you and suitable for the care
+            you can give it.
+          </p>
+
+          <p>
+            At Vintage Era, we believe that furniture can be more than
+            a possession. With thoughtful selection and proper care,
+            it can become a treasured part of the story you leave behind.
+          </p>
+        </section>
+
+        <!-- ARTICLE END NOTE -->
+        <div class="article-end-note">
+          <span></span>
+          <i data-lucide="flower-2"></i>
+          <span></span>
+        </div>
+
+        <!-- ARTICLE FOOTER -->
+        <footer class="article-footer">
+          <div class="article-footer-copy">
+            <span class="article-footer-label">CONTINUE EXPLORING</span>
+            <h3>Find a Piece Worth Passing On.</h3>
+          </div>
+
+          <a href="products.html" class="article-footer-link">
+            <span>Explore Collection</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </footer>
+
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside class="article-sidebar">
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="article-sidebar-card article-toc-card">
+          <p class="article-sidebar-eyebrow">IN THIS ARTICLE</p>
+          <h2 class="article-sidebar-title">A Thoughtful Guide</h2>
+
+          <nav class="article-toc" aria-label="Article table of contents">
+            <a href="#choosing-well" class="article-toc-link">
+              <span>Introduction</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#quality-materials" class="article-toc-link">
+              <span>Quality Materials</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#craftsmanship" class="article-toc-link">
+              <span>Craftsmanship</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#timeless-design" class="article-toc-link">
+              <span>Timeless Design</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#history-and-provenance" class="article-toc-link">
+              <span>History & Provenance</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#care-and-preservation" class="article-toc-link">
+              <span>Care & Preservation</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#final-thoughts" class="article-toc-link">
+              <span>Final Thoughts</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </nav>
+        </div>
+
+        <!-- COLLECTION CARD -->
+        <div class="article-sidebar-card article-collection-card">
+          <div class="article-collection-image">
+            <img
+              src="images/blog-side.png"
+              alt="Carefully selected antique furniture"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="article-collection-content">
+            <span class="article-sidebar-eyebrow">
+              THE COLLECTOR'S SELECTION
+            </span>
+
+            <h2>Some Things Never Go Out of Style.</h2>
+
+            <p>
+              Explore distinctive pieces selected for their
+              craftsmanship, character, and timeless appeal.
+            </p>
+
+            <a href="products.html" class="article-sidebar-button">
+              <span>Explore Collection</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- VIEWING CTA -->
+        <div class="article-sidebar-card article-viewing-card">
+          <i data-lucide="calendar-days" class="article-viewing-icon"></i>
+
+          <p class="article-sidebar-eyebrow">SEE IT IN PERSON</p>
+
+          <h2>Find the One That Speaks to You.</h2>
+
+          <p>
+            Take a closer look at the pieces that catch your eye.
+          </p>
+
+          <a href="contact.html" class="article-viewing-link">
+            <span>Book a Viewing</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</main>
+
+
+
+<!-- =========================================================
+     VINTAGE ERA
+     FOOTER
+     ========================================================= -->
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- =====================================================
+         BRAND
+         ====================================================== -->
+
+    <div class="footer-col footer-brand">
+      <div class="footer-logo">
+        <a href="index.html" aria-label="Vintage Era Home">
+          <img src="images/logo.png" alt="Vintage Era Logo" />
+        </a>
+
+        <div
+          class="footer-branding"
+          onclick="window.location.href = 'index.html'"
+        >
+          <h1>Vintage<span class="era">Era</span></h1>
+
+          <p>Antique &amp; Vintage Furniture</p>
+        </div>
+      </div>
+
+      <p class="footer-about">
+        Discover carefully curated antique and vintage furniture that carries
+        the character, craftsmanship, and stories of remarkable eras.
+      </p>
+
+      <!-- SOCIAL MEDIA -->
+
+      <div class="social-media">
+        <a href="#" aria-label="Instagram" title="Instagram">
+          <i data-lucide="camera" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Facebook" title="Facebook">
+          <i data-lucide="users" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Pinterest" title="Pinterest">
+          <i data-lucide="pin" aria-hidden="true"></i>
+        </a>
+
+        <a href="mailto:hello@vintageera.com" aria-label="Email" title="Email">
+          <i data-lucide="mail" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         QUICK LINKS
+         ====================================================== -->
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="blog.html">Blogs</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- =====================================================
+         COLLECTIONS
+         ====================================================== -->
+
+    <div class="footer-col">
+      <h3>Collections</h3>
+
+      <ul>
+        <li>
+          <a href="products.html#victorian"> Victorian Era </a>
+        </li>
+
+        <li>
+          <a href="products.html#edwardian"> Edwardian Era </a>
+        </li>
+
+        <li>
+          <a href="products.html#art-deco"> Art Deco </a>
+        </li>
+
+        <li>
+          <a href="products.html#mid-century"> Mid-Century </a>
+        </li>
+
+        <li>
+          <a href="products.html#colonial"> Colonial </a>
+        </li>
+
+        <li>
+          <a href="products.html#french"> French Provincial </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- =====================================================
+         RESTORATION
+         ====================================================== -->
+
+    <div class="footer-col">
+      <h3>Restoration</h3>
+
+      <ul>
+        <li>
+          <a href="services.html#assessment"> Furniture Assessment </a>
+        </li>
+
+        <li>
+          <a href="services.html#repair"> Wood Repair </a>
+        </li>
+
+        <li>
+          <a href="services.html#refinishing"> Refinishing </a>
+        </li>
+
+        <li>
+          <a href="services.html#upholstery"> Upholstery </a>
+        </li>
+
+        <li>
+          <a href="404.html"> 404 </a>
+        </li>
+
+        <li>
+          <a href="comming.html"> Comming Soon..... </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- =====================================================
+         CONTACT
+         ====================================================== -->
+
+    <div class="footer-col footer-contact">
+      <h3>Visit Us</h3>
+
+      <ul>
+        <li>
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+
+          <span> Hyderabad, India </span>
+        </li>
+
+        <li>
+          <i data-lucide="phone" aria-hidden="true"></i>
+
+          <a href="tel:+919876543210"> +91 98765 43210 </a>
+        </li>
+
+        <li>
+          <i data-lucide="mail" aria-hidden="true"></i>
+
+          <a href="mailto:hello@vintageera.com"> hello@vintageera.com </a>
+        </li>
+
+        <li>
+          <i data-lucide="clock" aria-hidden="true"></i>
+
+          <span> Mon – Sat: 10 AM – 7 PM </span>
+        </li>
+      </ul>
+
+      <!-- FOOTER CTA -->
+
+      <a href="contact.html#appointment" class="footer-book-btn">
+        <span>Book a Viewing</span>
+
+        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       FOOTER BOTTOM
+       ====================================================== -->
+
+  <div class="footer-bottom">
+    <p>
+      © 2026
+      <span class="footer-brand-name">
+        Vintage<span class="era">Era</span> </span
+      >. All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+      <a href="privacy.html"> Privacy Policy </a>
+
+      <a href="terms.html"> Terms &amp; Conditions </a>
+
+      <a href="cookies.html"> Cookies </a>
+
+      <!-- BACK TO TOP -->
+
+      <a href="#" class="top-btn" aria-label="Back to top" title="Back to top">
+        <i data-lucide="arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="global.js"></script>
+<script src="blog-d.js"></script>
+</body>
+</html>

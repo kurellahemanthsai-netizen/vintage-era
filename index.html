@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Home</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- =========================================================
+     VINTAGE ERA
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =====================================================
+         LOGO
+         ====================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Vintage Era Home">
+            <img src="images/logo.png" alt="Vintage Era Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>Vintage<span class="era">Era</span></h1>
+            <p>Antique &amp; Vintage Furniture</p>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         NAVIGATION
+         ====================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html" class="active">
+                <span>Home</span>
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html" class="active">
+                    <i data-lucide="house" aria-hidden="true"></i>
+                    <span>Home 1 — Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+                    <span>Home 2 — Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <!-- BLOGS -->
+
+            <li>
+              <a href="blog.html">Blogs</a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- MOBILE CTA -->
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Viewing</span>
+
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =====================================================
+         HEADER ACTIONS
+         ====================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- DESKTOP CTA -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Viewing</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <span class="section-tagline"> Timeless • Authentic • Curated </span>
+
+          <h1>
+            Furniture With
+            <span>A Story to Tell</span>
+          </h1>
+
+          <p class="hero-description">
+            Discover carefully curated antique and vintage furniture, each piece
+            carrying the character, craftsmanship, and history of another time.
+          </p>
+
+          <div class="hero-actions">
+            <a href="products.html" class="primary-btn">
+              <span>Explore Collection</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="contact.html#appointment" class="secondary-btn">
+              <span>Book a Viewing</span>
+              <i data-lucide="calendar-days"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img
+              src="images/hero-1.jpeg"
+              alt="Curated antique furniture collection"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SECTION 2 — FEATURED ANTIQUE PIECES
+     ========================================================= -->
+
+    <section class="featured-section" id="featured-collection">
+      <div class="featured-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tagline"> Featured Collection </span>
+
+          <h2>
+            A Curated Collection
+            <span>of Timeless Pieces</span>
+          </h2>
+
+          <p>
+            Discover distinctive antique and vintage furniture selected for its
+            craftsmanship, character, and connection to another time.
+          </p>
+        </div>
+
+        <!-- Featured Furniture Grid -->
+        <div class="featured-grid">
+          <!-- =========================
+                 CARD 01 — VICTORIAN
+                 ========================= -->
+
+          <article class="furniture-card">
+            <div class="furniture-image">
+              <img src="images/desk.jpeg" alt="Victorian carved writing desk" />
+
+              <span class="piece-number"> 01 </span>
+            </div>
+
+            <div class="furniture-content">
+              <span class="furniture-era"> Victorian </span>
+
+              <h3>Carved Writing Desk</h3>
+
+              <p>
+                Richly detailed wooden writing desk showcasing traditional
+                Victorian craftsmanship.
+              </p>
+
+              <a
+                href="products.html"
+                class="piece-link"
+                aria-label="View Victorian Carved Writing Desk"
+              >
+                <span>View Piece</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- =========================
+                 CARD 02 — EDWARDIAN
+                 ========================= -->
+
+          <article class="furniture-card">
+            <div class="furniture-image">
+              <img
+                src="images/armchair.jpeg"
+                alt="Edwardian heritage armchair"
+              />
+
+              <span class="piece-number"> 02 </span>
+            </div>
+
+            <div class="furniture-content">
+              <span class="furniture-era"> Edwardian </span>
+
+              <h3>Heritage Armchair</h3>
+
+              <p>
+                An elegant upholstered armchair with refined proportions and
+                timeless character.
+              </p>
+
+              <a
+                href="products.html"
+                class="piece-link"
+                aria-label="View Edwardian Heritage Armchair"
+              >
+                <span>View Piece</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- =========================
+                 CARD 03 — ART DECO
+                 ========================= -->
+
+          <article class="furniture-card">
+            <div class="furniture-image">
+              <img
+                src="images/sideboard.jpeg"
+                alt="Art Deco walnut sideboard"
+              />
+
+              <span class="piece-number"> 03 </span>
+            </div>
+
+            <div class="furniture-content">
+              <span class="furniture-era"> Art Deco </span>
+
+              <h3>Walnut Sideboard</h3>
+
+              <p>
+                A statement sideboard combining geometric detailing with
+                beautifully aged walnut.
+              </p>
+
+              <a
+                href="products.html"
+                class="piece-link"
+                aria-label="View Art Deco Walnut Sideboard"
+              >
+                <span>View Piece</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- =========================
+                 CARD 04 — COLONIAL
+                 ========================= -->
+
+          <article class="furniture-card">
+            <div class="furniture-image">
+              <img src="images/cabinate.jpeg" alt="Colonial display cabinet" />
+
+              <span class="piece-number"> 04 </span>
+            </div>
+
+            <div class="furniture-content">
+              <span class="furniture-era"> Colonial </span>
+
+              <h3>Display Cabinet</h3>
+
+              <p>
+                A distinguished cabinet designed to showcase treasured objects
+                and heirlooms.
+              </p>
+
+              <a
+                href="products.html"
+                class="piece-link"
+                aria-label="View Colonial Display Cabinet"
+              >
+                <span>View Piece</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Complete Collection -->
+        <div class="featured-footer">
+          <a href="products.html" class="collection-link">
+            <span>Explore Complete Collection</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     SECTION 3 — OUR HERITAGE
+     ========================================================= -->
+
+    <section class="heritage-section" id="heritage">
+      <div class="heritage-container">
+        <!-- Heritage Image -->
+        <div class="heritage-visual">
+          <div class="heritage-image">
+            <img
+              src="images/heritage.jpeg"
+              alt="Timeless antique furniture interior"
+            />
+          </div>
+
+          <div class="heritage-image-label">
+            <span>THE ART OF PRESERVING</span>
+          </div>
+        </div>
+
+        <!-- Heritage Content -->
+        <div class="heritage-content">
+          <span class="section-tagline"> Our Heritage </span>
+
+          <h2>
+            Preserving the Beauty
+            <span>of Another Time</span>
+          </h2>
+
+          <p class="heritage-intro">
+            At Vintage Era, we believe that exceptional furniture deserves more
+            than a place in a room. It deserves to have its story remembered.
+          </p>
+
+          <p class="heritage-description">
+            From carefully sourced antique pieces to thoughtfully restored
+            heirlooms, every piece in our collection is selected for its
+            craftsmanship, character, and history. We preserve the details that
+            make each piece unique while preparing it for another generation.
+          </p>
+
+          <!-- Heritage Statistics -->
+          <div class="heritage-stats">
+            <div class="heritage-stat">
+              <strong>25+</strong>
+
+              <span> Years of Craftsmanship </span>
+            </div>
+
+            <div class="heritage-stat">
+              <strong>500+</strong>
+
+              <span> Pieces Preserved </span>
+            </div>
+
+            <div class="heritage-stat">
+              <strong>12+</strong>
+
+              <span> Historical Eras </span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a href="about.html" class="heritage-link">
+            <span>Discover Our Story</span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     SECTION 4 — EXPLORE BY ERA
+     ========================================================= -->
+
+    <section class="eras-section" id="eras">
+      <div class="eras-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tagline"> Explore the Eras </span>
+
+          <h2>
+            Journey Through
+            <span>the Eras</span>
+          </h2>
+
+          <p>
+            Discover furniture shaped by different periods, cultures, and design
+            movements, each carrying its own distinctive character.
+          </p>
+        </div>
+
+        <!-- Era Grid -->
+        <div class="eras-grid">
+          <!-- =========================
+                 VICTORIAN
+                 ========================= -->
+
+          <a href="products.html?era=victorian" class="era-card">
+            <div class="era-image">
+              <img
+                src="images/victorian.jpeg"
+                alt="Victorian antique furniture"
+              />
+            </div>
+
+            <div class="era-overlay"></div>
+
+            <div class="era-content">
+              <h3>Victorian</h3>
+
+              <span class="era-link">
+                Explore Era
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- =========================
+                 EDWARDIAN
+                 ========================= -->
+
+          <a href="products.html?era=edwardian" class="era-card">
+            <div class="era-image">
+              <img
+                src="images/edwardian.jpeg"
+                alt="Edwardian antique furniture"
+              />
+            </div>
+
+            <div class="era-overlay"></div>
+
+            <div class="era-content">
+              <h3>Edwardian</h3>
+
+              <span class="era-link">
+                Explore Era
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- =========================
+                 ART DECO
+                 ========================= -->
+
+          <a href="products.html?era=art-deco" class="era-card">
+            <div class="era-image">
+              <img
+                src="images/art-deco.jpeg"
+                alt="Art Deco vintage furniture"
+              />
+            </div>
+
+            <div class="era-overlay"></div>
+
+            <div class="era-content">
+              <h3>Art Deco</h3>
+
+              <span class="era-link">
+                Explore Era
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- =========================
+                 MID-CENTURY
+                 ========================= -->
+
+          <a href="products.html?era=mid-century" class="era-card">
+            <div class="era-image">
+              <img src="images/mid.jpeg" alt="Mid-Century vintage furniture" />
+            </div>
+
+            <div class="era-overlay"></div>
+
+            <div class="era-content">
+              <h3>Mid-Century</h3>
+
+              <span class="era-link">
+                Explore Era
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- =========================
+                 COLONIAL
+                 ========================= -->
+
+          <a href="products.html?era=colonial" class="era-card">
+            <div class="era-image">
+              <img
+                src="images/colonial.jpeg"
+                alt="Colonial antique furniture"
+              />
+            </div>
+
+            <div class="era-overlay"></div>
+
+            <div class="era-content">
+              <h3>Colonial</h3>
+
+              <span class="era-link">
+                Explore Era
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- =========================
+                 FRENCH PROVINCIAL
+                 ========================= -->
+
+          <a href="products.html?era=french-provincial" class="era-card">
+            <div class="era-image">
+              <img
+                src="images/french.jpeg"
+                alt="French Provincial vintage furniture"
+              />
+            </div>
+
+            <div class="era-overlay"></div>
+
+            <div class="era-content">
+              <h3>French Provincial</h3>
+
+              <span class="era-link">
+                Explore Era
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SECTION 5 — RESTORATION SERVICES
+     ========================================================= -->
+
+    <section class="restoration-section" id="restoration">
+      <div class="restoration-container">
+        <!-- Section Header -->
+        <div class="restoration-header">
+          <span class="section-tagline"> Restoration </span>
+
+          <h2>
+            Restoration With Respect
+            <span>for the Original</span>
+          </h2>
+
+          <p>
+            Every restoration begins with understanding the piece, its
+            materials, its history, and the craftsmanship that made it special.
+          </p>
+        </div>
+
+        <!-- Restoration Services Grid -->
+        <div class="restoration-grid">
+          <!-- Service 01 -->
+          <article class="restoration-card">
+            <div class="restoration-card-top">
+              <span class="restoration-number"> 01 </span>
+
+              <i data-lucide="search-check" aria-hidden="true"></i>
+            </div>
+
+            <div class="restoration-card-content">
+              <h3>Furniture Assessment</h3>
+
+              <p>
+                A careful evaluation of the furniture's condition, materials,
+                structure, and history before any restoration begins.
+              </p>
+            </div>
+          </article>
+
+          <!-- Service 02 -->
+          <article class="restoration-card">
+            <div class="restoration-card-top">
+              <span class="restoration-number"> 02 </span>
+
+              <i data-lucide="hammer" aria-hidden="true"></i>
+            </div>
+
+            <div class="restoration-card-content">
+              <h3>Wood Repair</h3>
+
+              <p>
+                Structural and surface repairs carried out while preserving the
+                original character of the piece.
+              </p>
+            </div>
+          </article>
+
+          <!-- Service 03 -->
+          <article class="restoration-card">
+            <div class="restoration-card-top">
+              <span class="restoration-number"> 03 </span>
+
+              <i data-lucide="brush" aria-hidden="true"></i>
+            </div>
+
+            <div class="restoration-card-content">
+              <h3>Traditional Refinishing</h3>
+
+              <p>
+                Carefully selected finishing techniques that enhance the
+                furniture while respecting its original appearance.
+              </p>
+            </div>
+          </article>
+
+          <!-- Service 04 -->
+          <article class="restoration-card">
+            <div class="restoration-card-top">
+              <span class="restoration-number"> 04 </span>
+
+              <i data-lucide="armchair" aria-hidden="true"></i>
+            </div>
+
+            <div class="restoration-card-content">
+              <h3>Upholstery</h3>
+
+              <p>
+                Thoughtful upholstery restoration that renews comfort while
+                retaining the character of each antique piece.
+              </p>
+            </div>
+          </article>
+
+          <!-- Service 05 -->
+          <article class="restoration-card">
+            <div class="restoration-card-top">
+              <span class="restoration-number"> 05 </span>
+
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </div>
+
+            <div class="restoration-card-content">
+              <h3>Preservation</h3>
+
+              <p>
+                Protective care designed to preserve historic materials,
+                details, and the character of treasured furniture.
+              </p>
+            </div>
+          </article>
+
+          <!-- Service 06 -->
+          <article class="restoration-card">
+            <div class="restoration-card-top">
+              <span class="restoration-number"> 06 </span>
+
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+            </div>
+
+            <div class="restoration-card-content">
+              <h3>Custom Restoration</h3>
+
+              <p>
+                Specialized restoration approaches created for pieces requiring
+                unique attention, materials, or craftsmanship.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Restoration CTA -->
+        <div class="restoration-footer">
+          <a href="services.html" class="restoration-link">
+            <span>Explore Restoration Services</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     SECTION 6 — STORIES BEHIND THE PIECES
+     ========================================================= -->
+
+    <section class="stories-section" id="stories">
+      <div class="stories-container">
+        <!-- Section Intro -->
+        <div class="stories-intro">
+          <p class="section-tagline">Stories Behind the Pieces</p>
+
+          <h2>
+            Every Piece Has
+            <span>a Story to Tell</span>
+          </h2>
+
+          <p class="stories-description">
+            From grand Victorian furniture to carefully preserved mid-century
+            classics, each piece in our collection carries traces of another
+            time.
+          </p>
+
+          <a href="blog.html" class="stories-main-btn">
+            <span>Explore All Stories</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!-- Stories Layout -->
+        <div class="stories-layout">
+          <!-- Featured Story -->
+          <a href="blog.html" class="story-featured">
+            <img src="images/victorian-desk.png" alt="Victorian writing desk" />
+
+            <div class="story-overlay"></div>
+
+            <div class="story-featured-content">
+              <p class="story-era">Victorian Era</p>
+
+              <h3>The Victorian Writing Desk</h3>
+
+              <p class="story-period">Circa 1890</p>
+
+              <span class="story-link">
+                Discover Story
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- Smaller Stories -->
+          <div class="story-small-grid">
+            <!-- Story 01 -->
+            <a href="blog.html" class="story-small">
+              <img
+                src="images/ewardian-armchair.png"
+                alt="Edwardian heritage armchair"
+              />
+
+              <div class="story-small-overlay"></div>
+
+              <div class="story-small-content">
+                <p class="story-era">Edwardian Era</p>
+
+                <h3>The Edwardian Armchair</h3>
+
+                <p class="story-period">Early 1900s</p>
+
+                <span class="story-link">
+                  Discover Story
+                  <i data-lucide="arrow-up-right"></i>
+                </span>
+              </div>
+            </a>
+
+            <!-- Story 02 -->
+            <a href="blog.html" class="story-small">
+              <img src="images/art.png" alt="Art Deco walnut sideboard" />
+
+              <div class="story-small-overlay"></div>
+
+              <div class="story-small-content">
+                <p class="story-era">Art Deco Era</p>
+
+                <h3>The Art Deco Sideboard</h3>
+
+                <p class="story-period">Circa 1930</p>
+
+                <span class="story-link">
+                  Discover Story
+                  <i data-lucide="arrow-up-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SECTION 7 — VINTAGE ERA PHILOSOPHY
+     ========================================================= -->
+
+    <section class="philosophy-section" id="philosophy">
+      <div class="philosophy-container">
+        <!-- Intro -->
+        <div class="philosophy-intro">
+          <p class="section-tagline">Our Philosophy</p>
+
+          <h2>
+            Some Furniture Is Made to Last.
+            <span>Some Is Made to Be Remembered.</span>
+          </h2>
+
+          <p class="philosophy-description">
+            We believe antique furniture is more than an object. It is a piece
+            of history, shaped by skilled hands, preserved through generations,
+            and waiting to become part of another story.
+          </p>
+        </div>
+
+        <!-- Philosophy Points -->
+        <div class="philosophy-points">
+          <!-- Point 01 -->
+          <article class="philosophy-item">
+            <div class="philosophy-number">01</div>
+
+            <div class="philosophy-icon">
+              <i data-lucide="badge-check"></i>
+            </div>
+
+            <div class="philosophy-content">
+              <h3>Authenticity</h3>
+
+              <p>
+                We value the original character, materials, details, and history
+                that make every antique piece truly one of a kind.
+              </p>
+            </div>
+          </article>
+
+          <!-- Point 02 -->
+          <article class="philosophy-item">
+            <div class="philosophy-number">02</div>
+
+            <div class="philosophy-icon">
+              <i data-lucide="hammer"></i>
+            </div>
+
+            <div class="philosophy-content">
+              <h3>Craftsmanship</h3>
+
+              <p>
+                From hand-carved details to traditional joinery, we celebrate
+                the skill and patience behind furniture made in another era.
+              </p>
+            </div>
+          </article>
+
+          <!-- Point 03 -->
+          <article class="philosophy-item">
+            <div class="philosophy-number">03</div>
+
+            <div class="philosophy-icon">
+              <i data-lucide="refresh-cw"></i>
+            </div>
+
+            <div class="philosophy-content">
+              <h3>Preservation</h3>
+
+              <p>
+                Our approach to restoration is thoughtful and respectful,
+                preserving what makes each piece special while preparing it for
+                its next chapter.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- /* =========================================================
+   SECTION 8 — PRIVATE VIEWING CTA
+   ========================================================= */ -->
+
+    <section class="private-cta" id="private-viewing">
+      <div class="private-cta-container">
+        <!-- CTA Content -->
+        <div class="private-cta-content">
+          <!-- Tagline -->
+          <div class="private-cta-tagline">
+            <span class="private-cta-tagline-dot"></span>
+
+            <span> Your Home. Our Heritage. </span>
+          </div>
+
+          <!-- Heading -->
+          <h2>
+            Bring History
+            <span>Home</span>
+          </h2>
+
+          <!-- Description -->
+          <p class="private-cta-description">
+            Discover carefully curated antique furniture, timeless
+            craftsmanship, and remarkable pieces waiting to become part of your
+            story.
+          </p>
+
+          <!-- Buttons -->
+          <div class="private-cta-actions">
+            <a href="contact.html#appointment" class="private-cta-primary">
+              <span>Book a Private Viewing</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+
+            <a href="products.html" class="private-cta-secondary">
+              <span>Explore Collection</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Divider -->
+          <div class="private-cta-divider">
+            <span></span>
+
+            <i data-lucide="flower-2"></i>
+
+            <span></span>
+          </div>
+
+          <!-- Era Links -->
+          <div class="private-cta-eras">
+            <a href="products.html#victorian"> Victorian </a>
+
+            <b>•</b>
+
+            <a href="products.html#edwardian"> Edwardian </a>
+
+            <b>•</b>
+
+            <a href="products.html#art-deco"> Art Deco </a>
+
+            <b>•</b>
+
+            <a href="products.html#colonial"> Colonial </a>
+
+            <b>•</b>
+
+            <a href="products.html#mid-century"> Mid-Century </a>
+
+            <b>•</b>
+
+            <a href="services.html"> Restoration </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     VINTAGE ERA
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =====================================================
+         BRAND
+         ====================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Vintage Era Home">
+              <img src="images/logo.png" alt="Vintage Era Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>Vintage<span class="era">Era</span></h1>
+
+              <p>Antique &amp; Vintage Furniture</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            Discover carefully curated antique and vintage furniture that
+            carries the character, craftsmanship, and stories of remarkable
+            eras.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" aria-label="Pinterest" title="Pinterest">
+              <i data-lucide="pin" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="mailto:hello@vintageera.com"
+              aria-label="Email"
+              title="Email"
+            >
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         QUICK LINKS
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="blog.html">Blogs</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         COLLECTIONS
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Collections</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#victorian"> Victorian Era </a>
+            </li>
+
+            <li>
+              <a href="products.html#edwardian"> Edwardian Era </a>
+            </li>
+
+            <li>
+              <a href="products.html#art-deco"> Art Deco </a>
+            </li>
+
+            <li>
+              <a href="products.html#mid-century"> Mid-Century </a>
+            </li>
+
+            <li>
+              <a href="products.html#colonial"> Colonial </a>
+            </li>
+
+            <li>
+              <a href="products.html#french"> French Provincial </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         RESTORATION
+         ====================================================== -->
+
+        <div class="footer-col">
+          <h3>Restoration</h3>
+
+          <ul>
+            <li>
+              <a href="services.html#assessment"> Furniture Assessment </a>
+            </li>
+
+            <li>
+              <a href="services.html#repair"> Wood Repair </a>
+            </li>
+
+            <li>
+              <a href="services.html#refinishing"> Refinishing </a>
+            </li>
+
+            <li>
+              <a href="services.html#upholstery"> Upholstery </a>
+            </li>
+
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming Soon..... </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====================================================
+         CONTACT
+         ====================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Visit Us</h3>
+
+          <ul>
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Hyderabad, India </span>
+            </li>
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+919876543210"> +91 98765 43210 </a>
+            </li>
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:hello@vintageera.com"> hello@vintageera.com </a>
+            </li>
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 10 AM – 7 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#appointment" class="footer-book-btn">
+            <span>Book a Viewing</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =====================================================
+       FOOTER BOTTOM
+       ====================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+          <span class="footer-brand-name">
+            Vintage<span class="era">Era</span> </span
+          >. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms &amp; Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>

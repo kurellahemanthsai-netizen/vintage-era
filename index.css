@@ -1,0 +1,3707 @@
+/* =========================================================
+   HERO SECTION
+   GLOBAL WEBSITE CONTAINER SYSTEM
+   ========================================================= */
+
+.hero-section {
+  height: 90vh;
+  margin-top: 78px;
+  padding: 70px 0;
+  background: var(--site-bg);
+  overflow: hidden;
+}
+
+/* =========================
+   HERO CONTAINER
+   SAME ALIGNMENT AS
+   HEADER + FOOTER
+   ========================= */
+
+.hero-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* =========================
+   HERO CONTENT
+   ========================= */
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content .section-tagline {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  color: var(--text);
+  font-family: var(--font-heading);
+
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: var(--primary);
+}
+
+.hero-description {
+  max-width: 520px;
+  margin: 30px 0 35px;
+
+  color: var(--muted);
+  font-family: var(--font-body);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   HERO ACTIONS
+   ========================= */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  min-height: 52px;
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 6px;
+
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: var(--site-bg);
+}
+
+.primary-btn:hover {
+  background: var(--secondary);
+  color: var(--site-bg);
+}
+
+.secondary-btn {
+  border: 2px solid var(--border);
+  color: var(--text);
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.primary-btn svg,
+.secondary-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* =========================
+   HERO IMAGE
+   ========================= */
+
+.hero-visual {
+  position: relative;
+  height: min(720px, 75vh);
+}
+
+.hero-image-wrapper {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.hero-image-wrapper:hover img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   SECTION 2 — FEATURED ANTIQUE PIECES
+   ========================================================= */
+
+.featured-section {
+  width: 100%;
+  padding: 110px 0;
+  background: var(--surface);
+}
+
+.featured-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+/* =========================================================
+   SECTION HEADER — CENTERED
+   ========================================================= */
+
+.section-header {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.section-header .section-tagline {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+
+.section-header h2 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+.section-header p {
+  max-width: 620px;
+
+  margin: 24px auto 0;
+
+  color: var(--muted);
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   FEATURED GRID
+   ========================================================= */
+
+.featured-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+/* =========================================================
+   FURNITURE CARD
+   ========================================================= */
+
+.furniture-card {
+  min-width: 0;
+}
+
+/* =========================================================
+   FURNITURE IMAGE
+   ========================================================= */
+
+.furniture-image {
+  position: relative;
+
+  width: 100%;
+  height: 430px;
+
+  overflow: hidden;
+
+  background: var(--site-bg);
+}
+
+.furniture-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.furniture-card:hover .furniture-image img {
+  transform: scale(1.035);
+}
+
+/* =========================================================
+   PIECE NUMBER
+   ========================================================= */
+
+.piece-number {
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--site-bg);
+  color: var(--primary);
+
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   FURNITURE CONTENT
+   ========================================================= */
+
+.furniture-content {
+  padding: 22px 2px 0;
+}
+
+/* =========================================================
+   ERA
+   ========================================================= */
+
+.furniture-era {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   FURNITURE TITLE
+   ========================================================= */
+
+.furniture-content h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.furniture-content p {
+  max-width: 100%;
+
+  margin: 12px 0 18px;
+
+  color: var(--muted);
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   VIEW PIECE LINK
+   ========================================================= */
+
+.piece-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: var(--text);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.piece-link svg {
+  width: 15px;
+  height: 15px;
+
+  transition: transform 0.3s ease;
+}
+
+.piece-link:hover {
+  color: var(--secondary);
+}
+
+.piece-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   COMPLETE COLLECTION
+   ========================================================= */
+
+.featured-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 60px;
+}
+
+.collection-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding-bottom: 8px;
+
+  bottom: 1px solid var(--secondary);
+
+  padding: 15px 17px;
+
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.collection-link svg {
+  width: 17px;
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.collection-link:hover {
+  background: var(--secondary);
+}
+
+.collection-link:hover svg {
+  transform: translateX(5px);
+}
+
+/* =========================================================
+   SECTION 3 — OUR HERITAGE
+   ========================================================= */
+
+.heritage-section {
+  width: 100%;
+  padding: 110px 0;
+
+  background: var(--site-bg);
+}
+
+.heritage-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+
+  gap: 90px;
+}
+
+/* =========================================================
+   HERITAGE VISUAL
+   ========================================================= */
+
+.heritage-visual {
+  position: relative;
+
+  width: 100%;
+}
+
+.heritage-image {
+  width: 100%;
+  height: 650px;
+
+  overflow: hidden;
+
+  background: var(--surface);
+}
+
+.heritage-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.heritage-visual:hover .heritage-image img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.heritage-image-label {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  padding: 18px 24px;
+
+  background: var(--primary);
+  color: var(--site-bg);
+}
+
+.heritage-image-label span {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   HERITAGE CONTENT
+   ========================================================= */
+
+.heritage-content {
+  max-width: 600px;
+}
+
+.heritage-content .section-tagline {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.heritage-content h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+
+.heritage-content h2 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.heritage-intro {
+  margin: 28px 0 14px;
+
+  color: var(--text);
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.heritage-description {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   HERITAGE STATISTICS
+   ========================================================= */
+
+.heritage-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 40px;
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.heritage-stat {
+  padding: 22px 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid var(--border);
+}
+
+.heritage-stat:last-child {
+  border-right: none;
+}
+
+.heritage-stat strong {
+  color: var(--primary);
+
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.heritage-stat span {
+  margin-top: 8px;
+
+  color: var(--muted);
+
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/* =========================================================
+   HERITAGE LINK
+   ========================================================= */
+
+.heritage-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 32px;
+  padding-bottom: 8px;
+
+  border: 1px solid var(--secondary);
+
+  padding: 10px 17px;
+
+  border-radius: 6px;
+
+  color: white;
+  background: var(--primary);
+
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.heritage-link svg {
+  width: 16px;
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.heritage-link:hover {
+  background: var(--secondary);
+}
+
+.heritage-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   SECTION 4 — EXPLORE BY ERA
+   ========================================================= */
+
+.eras-section {
+  width: 100%;
+  padding: 110px 0;
+
+  background: var(--surface);
+}
+
+.eras-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.eras-section .section-header {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.eras-section .section-tagline {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.eras-section .section-header h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+
+.eras-section .section-header h2 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+.eras-section .section-header p {
+  max-width: 620px;
+
+  margin: 24px auto 0;
+
+  color: var(--muted);
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   ERA GRID
+   ========================================================= */
+
+.eras-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+/* =========================================================
+   ERA CARD
+   ========================================================= */
+
+.era-card {
+  position: relative;
+
+  display: block;
+
+  height: 470px;
+
+  overflow: hidden;
+
+  background: var(--site-bg);
+
+  text-decoration: none;
+}
+
+/* =========================================================
+   ERA IMAGE
+   ========================================================= */
+
+.era-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.era-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+.era-card:hover .era-image img {
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   ERA OVERLAY
+   ========================================================= */
+
+.era-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--text) 75%, transparent) 0%,
+    color-mix(in srgb, var(--text) 30%, transparent) 45%,
+    transparent 75%
+  );
+
+  opacity: 0.9;
+
+  transition: opacity 0.4s ease;
+}
+
+.era-card:hover .era-overlay {
+  opacity: 1;
+}
+
+/* =========================================================
+   ERA CONTENT
+   ========================================================= */
+
+.era-content {
+  position: absolute;
+
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+
+  z-index: 2;
+}
+
+.era-content h3 {
+  margin: 0;
+
+  color: var(--site-bg);
+
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.era-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 15px;
+
+  color: var(--site-bg);
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  transition: color 0.3s ease;
+}
+
+.era-link svg {
+  width: 15px;
+  height: 15px;
+
+  transition: transform 0.3s ease;
+}
+
+.era-card:hover .era-link {
+  color: var(--secondary);
+}
+
+.era-card:hover .era-link svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   SECTION 5 — RESTORATION SERVICES
+   ========================================================= */
+
+.restoration-section {
+  width: 100%;
+  padding: 110px 0;
+
+  background: var(--site-bg);
+}
+
+.restoration-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.restoration-header {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.restoration-header .section-tagline {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.restoration-header h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+
+.restoration-header h2 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+.restoration-header p {
+  max-width: 620px;
+
+  margin: 24px auto 0;
+
+  color: var(--muted);
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   RESTORATION GRID
+   ========================================================= */
+
+.restoration-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+/* =========================================================
+   RESTORATION CARD
+   ========================================================= */
+
+.restoration-card {
+  min-height: 280px;
+
+  padding: 28px;
+
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  background: var(--surface);
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.restoration-card:hover {
+  background: var(--site-bg);
+
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.restoration-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.restoration-number {
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.restoration-card-top svg {
+  width: 25px;
+  height: 25px;
+
+  color: var(--primary);
+
+  stroke-width: 1.4;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.restoration-card-content {
+  margin-top: 60px;
+}
+
+.restoration-card-content h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.restoration-card-content p {
+  max-width: 390px;
+
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   RESTORATION FOOTER
+   ========================================================= */
+
+.restoration-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 55px;
+}
+
+.restoration-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding-bottom: 8px;
+
+  border: 1px solid var(--secondary);
+  padding: 10px 17px;
+  border-radius: 6px;
+  color: white;
+  background-color: var(--primary);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.restoration-link svg {
+  width: 16px;
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.restoration-link:hover {
+  background: var(--secondary);
+}
+
+.restoration-link:hover svg {
+  transform: translate(3px, -3px);
+}
+/* =========================================================
+   SECTION 6 — STORIES BEHIND THE PIECES
+   ========================================================= */
+
+.stories-section {
+  width: 100%;
+  padding: 110px 0;
+  background: var(--surface);
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.stories-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* =========================================================
+   INTRO CONTENT
+   ========================================================= */
+
+.stories-intro {
+  max-width: 480px;
+}
+
+.stories-intro .section-tagline {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.stories-intro h2 {
+  margin: 0 0 24px;
+
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+
+  color: var(--text);
+}
+
+.stories-intro h2 span {
+  display: block;
+  color: var(--primary);
+}
+
+.stories-description {
+  max-width: 440px;
+
+  margin: 0 0 32px;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   MAIN BUTTON
+   ========================================================= */
+
+.stories-main-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 50px;
+  padding: 0 22px;
+
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+
+  color: white;
+  border-radius: 6px;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.stories-main-btn svg {
+  width: 17px;
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.stories-main-btn:hover {
+  background: var(--secondary);
+  color: var(--site-bg);
+
+  transform: translateY(-2px);
+}
+
+.stories-main-btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   STORIES LAYOUT
+   ========================================================= */
+
+.stories-layout {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.55fr 0.75fr;
+  gap: 14px;
+
+  min-height: 570px;
+}
+
+/* =========================================================
+   FEATURED STORY
+   ========================================================= */
+
+.story-featured {
+  position: relative;
+
+  min-height: 570px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+
+  text-decoration: none;
+
+  background: var(--surface);
+}
+
+.story-featured img,
+.story-small img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+.story-featured:hover img,
+.story-small:hover img {
+  transform: scale(1.045);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.story-overlay,
+.story-small-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--text) 82%, transparent) 0%,
+    color-mix(in srgb, var(--text) 38%, transparent) 42%,
+    transparent 78%
+  );
+}
+
+/* =========================================================
+   FEATURED CONTENT
+   ========================================================= */
+
+.story-featured-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  padding: 32px;
+}
+
+.story-era {
+  margin: 0 0 8px;
+
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+
+  color: var(--secondary);
+}
+
+.story-featured h3 {
+  max-width: 430px;
+
+  margin: 0 0 8px;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1;
+
+  color: var(--site-bg);
+}
+
+.story-period {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+
+  color: color-mix(in srgb, var(--site-bg) 78%, transparent);
+}
+
+/* =========================================================
+   STORY LINK
+   ========================================================= */
+
+.story-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 22px;
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+
+  color: var(--site-bg);
+}
+
+.story-link svg {
+  width: 15px;
+  height: 15px;
+
+  transition: transform 0.3s ease;
+}
+
+.story-featured:hover .story-link svg,
+.story-small:hover .story-link svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   SMALL STORIES
+   ========================================================= */
+
+.story-small-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+}
+
+.story-small {
+  position: relative;
+
+  min-height: 0;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+
+  text-decoration: none;
+
+  background: var(--surface);
+}
+
+.story-small-overlay {
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--text) 82%, transparent) 0%,
+    color-mix(in srgb, var(--text) 25%, transparent) 55%,
+    transparent 85%
+  );
+}
+
+.story-small-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  padding: 22px;
+}
+
+.story-small h3 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 500;
+  line-height: 1.02;
+
+  color: var(--site-bg);
+}
+
+/* =========================================================
+   HOVER BORDER
+   ========================================================= */
+
+.story-featured::after,
+.story-small::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border: 1px solid transparent;
+
+  pointer-events: none;
+
+  transition: border-color 0.3s ease;
+}
+
+.story-featured:hover::after,
+.story-small:hover::after {
+  border-color: var(--secondary);
+}
+
+/* =========================================================
+   SECTION 7 — VINTAGE ERA PHILOSOPHY
+   ========================================================= */
+
+.philosophy-section {
+  width: 100%;
+  padding: 120px 0;
+
+  background: var(--site-bg);
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.philosophy-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.philosophy-intro {
+  max-width: 900px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.philosophy-intro .section-tagline {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.philosophy-intro h2 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+
+  color: var(--text);
+}
+
+.philosophy-intro h2 span {
+  display: inline-block;
+
+  color: var(--primary);
+}
+
+.philosophy-description {
+  max-width: 680px;
+
+  margin: 28px auto 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.85;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   PHILOSOPHY POINTS
+   ========================================================= */
+
+.philosophy-points {
+  width: 100%;
+
+  margin-top: 75px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================================================
+   PHILOSOPHY ITEM
+   ========================================================= */
+
+.philosophy-item {
+  position: relative;
+
+  min-height: 250px;
+
+  padding: 35px 35px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid var(--border);
+}
+
+.philosophy-item:last-child {
+  border-right: none;
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.philosophy-number {
+  position: absolute;
+
+  top: 30px;
+  right: 30px;
+
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.philosophy-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+
+  color: var(--secondary);
+}
+
+.philosophy-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.philosophy-content h3 {
+  margin: 0 0 12px;
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+
+  color: var(--text);
+}
+
+.philosophy-content p {
+  max-width: 340px;
+
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.75;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.philosophy-item {
+  transition: background-color 0.3s ease;
+}
+
+.philosophy-item:hover {
+  background: var(--site-bg);
+}
+
+.philosophy-item:hover .philosophy-icon {
+  background: var(--secondary);
+  border-color: var(--secondary);
+
+  color: var(--site-bg);
+}
+/* =========================================================
+   SECTION 8 — PRIVATE VIEWING CTA
+   ========================================================= */
+
+.private-cta {
+  width: 100%;
+
+  padding: 70px 0;
+
+  background: var(--site-bg);
+}
+
+/* =========================================================
+   CTA BOX
+   ========================================================= */
+
+.private-cta-container {
+  width: calc(100% - 110px);
+  max-width: 1000px;
+
+  min-height: 430px;
+
+  margin: 0 auto;
+  padding: 60px 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  position: relative;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.private-cta-content {
+  width: 100%;
+  max-width: 760px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TAGLINE
+   ========================================================= */
+
+.private-cta-tagline {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--secondary);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.private-cta-tagline-dot {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.private-cta-content h2 {
+  margin: 22px 0 0;
+
+  font-family: var(--font-heading);
+
+  font-size: 4rem;
+
+  font-weight: 500;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.025em;
+
+  color: var(--text);
+}
+
+.private-cta-content h2 span {
+  color: var(--primary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.private-cta-description {
+  max-width: 620px;
+
+  margin: 20px auto 0;
+
+  font-family: var(--font-body);
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.private-cta-actions {
+  margin-top: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+/* =========================================================
+   COMMON BUTTON
+   ========================================================= */
+
+.private-cta-primary,
+.private-cta-secondary {
+  min-height: 48px;
+
+  padding: 0 22px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 6px;
+
+  font-family: var(--font-body);
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.private-cta-primary {
+  background: var(--primary);
+
+  border: 1px solid var(--primary);
+
+  color: var(--site-bg);
+}
+
+.private-cta-primary svg {
+  width: 16px;
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.private-cta-primary:hover {
+  background: var(--secondary);
+
+  border-color: var(--secondary);
+
+  color: var(--site-bg);
+
+  transform: translateY(-2px);
+}
+
+.private-cta-primary:hover svg {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.private-cta-secondary {
+  background: transparent;
+
+  border: 1px solid var(--secondary);
+
+  color: var(--text);
+}
+
+.private-cta-secondary svg {
+  width: 16px;
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.private-cta-secondary:hover {
+  background: var(--site-bg);
+
+  border-color: var(--secondary);
+
+  color: var(--secondary);
+
+  transform: translateY(-2px);
+}
+
+.private-cta-secondary:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.private-cta-divider {
+  width: 100%;
+  max-width: 560px;
+
+  margin: 30px auto 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.private-cta-divider span {
+  flex: 1;
+
+  height: 1px;
+
+  background: var(--border);
+}
+
+.private-cta-divider svg {
+  width: 16px;
+  height: 16px;
+
+  color: var(--secondary);
+
+  stroke-width: 1.4;
+}
+
+/* =========================================================
+   ERA LINKS
+   ========================================================= */
+
+.private-cta-eras {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  font-family: var(--font-body);
+
+  font-size: 0.61rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.private-cta-eras a {
+  color: var(--muted);
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.private-cta-eras a:hover {
+  color: var(--secondary);
+}
+
+.private-cta-eras b {
+  color: var(--secondary);
+
+  font-size: 0.75rem;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   SUBTLE BOX ACCENT
+   ========================================================= */
+
+.private-cta-container::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 12px;
+
+  border: 1px solid color-mix(in srgb, var(--secondary) 30%, transparent);
+
+  pointer-events: none;
+}
+/* =========================================================
+   RESPONSIVE MEDIA QUERIES
+   VINTAGE ERA — HOME PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+    /* =========================
+       HERO SECTION
+       ========================= */
+
+    .hero-section {
+        height: auto;
+        min-height: auto;
+        margin-top: 78px;
+        padding: 55px 0 65px;
+    }
+
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 0 20px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-content .section-tagline {
+        margin-bottom: 14px;
+        font-size: 0.68rem;
+        letter-spacing: 0.14em;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3rem, 13vw, 4rem);
+        line-height: 0.94;
+        letter-spacing: -0.02em;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        margin: 24px 0 28px;
+
+        font-size: 0.88rem;
+        line-height: 1.75;
+    }
+
+    /* HERO BUTTONS */
+
+    .hero-actions {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        min-height: 48px;
+        padding: 0 18px;
+
+        font-size: 0.72rem;
+    }
+
+    /* HERO IMAGE */
+
+    .hero-visual {
+        width: 100%;
+        height: 430px;
+    }
+
+    .hero-image-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-image-wrapper img {
+        border-radius: 30px;
+    }
+
+
+    /* =========================
+       FEATURED SECTION
+       ========================= */
+
+    .featured-section {
+        padding: 75px 0;
+    }
+
+    .featured-container {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 0 20px;
+    }
+
+    .section-header {
+        max-width: 100%;
+        margin: 0 auto 40px;
+    }
+
+    .section-header .section-tagline {
+        font-size: 0.68rem;
+        letter-spacing: 0.14em;
+    }
+
+    .section-header h2 {
+        font-size: 2.35rem;
+        line-height: 1;
+    }
+
+    .section-header p {
+        max-width: 100%;
+        margin-top: 18px;
+
+        font-size: 0.85rem;
+        line-height: 1.75;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .furniture-image {
+        height: 390px;
+    }
+
+    .furniture-content {
+        padding: 18px 2px 0;
+    }
+
+    .furniture-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .furniture-content p {
+        font-size: 0.76rem;
+    }
+
+    .featured-footer {
+        margin-top: 45px;
+    }
+
+
+    /* =========================
+       HERITAGE SECTION
+       ========================= */
+
+    .heritage-section {
+        padding: 75px 0;
+    }
+
+    .heritage-container {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 0 20px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .heritage-visual {
+        width: 100%;
+        order: 1;
+    }
+
+    .heritage-content {
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+    }
+
+    .heritage-image {
+        width: 100%;
+        height: 430px;
+    }
+
+    .heritage-content .section-tagline {
+        font-size: 0.68rem;
+        letter-spacing: 0.14em;
+    }
+
+    .heritage-content h2 {
+        font-size: 2.35rem;
+        line-height: 1;
+    }
+
+    .heritage-intro {
+        margin: 22px 0 12px;
+        font-size: 0.88rem;
+        line-height: 1.75;
+    }
+
+    .heritage-description {
+        max-width: 100%;
+        font-size: 0.8rem;
+        line-height: 1.75;
+    }
+
+    .heritage-stats {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 30px;
+    }
+
+    .heritage-stat {
+        padding: 18px 8px;
+    }
+
+    .heritage-stat strong {
+        font-size: 2rem;
+    }
+
+    .heritage-stat span {
+        font-size: 0.61rem;
+    }
+
+    .heritage-link {
+        margin-top: 25px;
+    }
+
+
+    /* =========================
+       ERAS SECTION
+       ========================= */
+
+    .eras-section {
+        padding: 75px 0;
+    }
+
+    .eras-container {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 0 20px;
+    }
+
+    .eras-section .section-header {
+        margin-bottom: 40px;
+    }
+
+    .eras-section .section-header h2 {
+        font-size: 2.35rem;
+    }
+
+    .eras-section .section-header p {
+        font-size: 0.85rem;
+    }
+
+    .eras-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .era-card {
+        height: 420px;
+    }
+
+    .era-content {
+        left: 22px;
+        right: 22px;
+        bottom: 22px;
+    }
+
+    .era-content h3 {
+        font-size: 2.15rem;
+    }
+
+
+    /* =========================
+       RESTORATION SECTION
+       ========================= */
+
+    .restoration-section {
+        padding: 75px 0;
+    }
+
+    .restoration-container {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 0 20px;
+    }
+
+    .restoration-header {
+        margin-bottom: 40px;
+    }
+
+    .restoration-header h2 {
+        font-size: 2.35rem;
+    }
+
+    .restoration-header p {
+        font-size: 0.85rem;
+    }
+
+    .restoration-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .restoration-card {
+        min-height: 245px;
+        padding: 24px;
+    }
+
+    .restoration-card-content {
+        margin-top: 45px;
+    }
+
+    .restoration-card-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .restoration-card-content p {
+        max-width: 100%;
+        font-size: 0.76rem;
+    }
+
+    .restoration-footer {
+        margin-top: 40px;
+    }
+
+
+    /* =========================
+       STORIES SECTION
+       ========================= */
+
+    .stories-section {
+        padding: 75px 0;
+    }
+
+    .stories-container {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 0 20px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .stories-intro {
+        max-width: 100%;
+    }
+
+    .stories-intro h2 {
+        font-size: 2.35rem;
+        line-height: 1;
+    }
+
+    .stories-description {
+        max-width: 100%;
+        font-size: 0.85rem;
+        line-height: 1.75;
+    }
+
+    .stories-layout {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+        gap: 14px;
+
+        min-height: auto;
+    }
+
+    .story-featured {
+        min-height: 430px;
+    }
+
+    .story-small-grid {
+        grid-template-rows: 240px 240px;
+        gap: 14px;
+    }
+
+    .story-featured-content {
+        padding: 24px;
+    }
+
+    .story-featured h3 {
+        max-width: 100%;
+        font-size: 2.25rem;
+    }
+
+    .story-small-content {
+        padding: 20px;
+    }
+
+    .story-small h3 {
+        font-size: 1.6rem;
+    }
+
+
+    /* =========================
+       PHILOSOPHY SECTION
+       ========================= */
+
+    .philosophy-section {
+        padding: 80px 0;
+    }
+
+    .philosophy-container {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 0 20px;
+    }
+
+    .philosophy-intro {
+        max-width: 100%;
+    }
+
+    .philosophy-intro h2 {
+        font-size: 2.35rem;
+        line-height: 1;
+    }
+
+    .philosophy-description {
+        max-width: 100%;
+        margin-top: 22px;
+
+        font-size: 0.84rem;
+        line-height: 1.8;
+    }
+
+    .philosophy-points {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    .philosophy-item {
+        min-height: 220px;
+        padding: 30px 25px 35px;
+
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .philosophy-item:last-child {
+        border-bottom: none;
+    }
+
+    .philosophy-number {
+        top: 25px;
+        right: 25px;
+    }
+
+    .philosophy-icon {
+        margin-bottom: 22px;
+    }
+
+    .philosophy-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .philosophy-content p {
+        max-width: 100%;
+        font-size: 0.78rem;
+    }
+
+
+    /* =========================
+       PRIVATE VIEWING CTA
+       ========================= */
+
+    .private-cta {
+        padding: 55px 0;
+    }
+
+    .private-cta-container {
+        width: calc(100% - 40px);
+        max-width: 100%;
+
+        min-height: 390px;
+
+        padding: 45px 20px;
+    }
+
+    .private-cta-content {
+        max-width: 100%;
+    }
+
+    .private-cta-content h2 {
+        font-size: 2.65rem;
+        line-height: 0.98;
+    }
+
+    .private-cta-description {
+        max-width: 100%;
+        font-size: 0.78rem;
+        line-height: 1.7;
+    }
+
+    .private-cta-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .private-cta-primary,
+    .private-cta-secondary {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    .private-cta-divider {
+        margin: 25px auto 18px;
+    }
+
+    .private-cta-eras {
+        gap: 6px;
+        line-height: 1.7;
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px — 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* =========================
+       GLOBAL CONTAINER
+       ========================= */
+
+    .hero-container,
+    .featured-container,
+    .heritage-container,
+    .eras-container,
+    .restoration-container,
+    .stories-container,
+    .philosophy-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero-section {
+        height: auto;
+        min-height: auto;
+        margin-top: 78px;
+        padding: 65px 0 75px;
+    }
+
+    .hero-container {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 680px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3.8rem, 8vw, 5rem);
+    }
+
+    .hero-description {
+        max-width: 600px;
+    }
+
+    .hero-visual {
+        height: 500px;
+    }
+
+    .hero-image-wrapper img {
+        border-radius: 40px;
+    }
+
+
+    /* =========================
+       FEATURED
+       ========================= */
+
+    .featured-section {
+        padding: 90px 0;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header h2,
+    .eras-section .section-header h2,
+    .restoration-header h2 {
+        font-size: 2.7rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 20px;
+    }
+
+    .furniture-image {
+        height: 380px;
+    }
+
+    .furniture-content h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /* =========================
+       HERITAGE
+       ========================= */
+
+    .heritage-section {
+        padding: 90px 0;
+    }
+
+    .heritage-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .heritage-image {
+        height: 540px;
+    }
+
+    .heritage-content h2 {
+        font-size: 2.7rem;
+    }
+
+    .heritage-intro {
+        font-size: 0.87rem;
+    }
+
+    .heritage-description {
+        font-size: 0.78rem;
+    }
+
+    .heritage-stats {
+        margin-top: 30px;
+    }
+
+    .heritage-stat {
+        padding: 18px 8px;
+    }
+
+    .heritage-stat strong {
+        font-size: 2rem;
+    }
+
+
+    /* =========================
+       ERAS
+       ========================= */
+
+    .eras-section {
+        padding: 90px 0;
+    }
+
+    .eras-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .era-card {
+        height: 420px;
+    }
+
+    .era-content {
+        left: 22px;
+        right: 22px;
+        bottom: 22px;
+    }
+
+    .era-content h3 {
+        font-size: 2.15rem;
+    }
+
+
+    /* =========================
+       RESTORATION
+       ========================= */
+
+    .restoration-section {
+        padding: 90px 0;
+    }
+
+    .restoration-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .restoration-card {
+        min-height: 270px;
+        padding: 25px;
+    }
+
+    .restoration-card-content {
+        margin-top: 50px;
+    }
+
+    .restoration-card-content h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /* =========================
+       STORIES
+       ========================= */
+
+    .stories-section {
+        padding: 90px 0;
+    }
+
+    .stories-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .stories-intro {
+        max-width: 650px;
+    }
+
+    .stories-intro h2 {
+        font-size: 2.7rem;
+    }
+
+    .stories-layout {
+        grid-template-columns: 1.55fr 0.75fr;
+        min-height: 500px;
+    }
+
+    .story-featured {
+        min-height: 500px;
+    }
+
+    .story-small-grid {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .story-featured-content {
+        padding: 26px;
+    }
+
+    .story-featured h3 {
+        font-size: 2.45rem;
+    }
+
+    .story-small-content {
+        padding: 18px;
+    }
+
+    .story-small h3 {
+        font-size: 1.55rem;
+    }
+
+
+    /* =========================
+       PHILOSOPHY
+       ========================= */
+
+    .philosophy-section {
+        padding: 95px 0;
+    }
+
+    .philosophy-container {
+        min-height: auto;
+    }
+
+    .philosophy-intro {
+        max-width: 680px;
+    }
+
+    .philosophy-intro h2 {
+        font-size: 2.7rem;
+    }
+
+    .philosophy-description {
+        max-width: 620px;
+    }
+
+    .philosophy-points {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 60px;
+    }
+
+    .philosophy-item {
+        min-height: 240px;
+        padding: 30px 28px 35px;
+    }
+
+    .philosophy-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .philosophy-item:last-child {
+        border-right: 1px solid var(--border);
+    }
+
+    .philosophy-content h3 {
+        font-size: 1.85rem;
+    }
+
+
+    /* =========================
+       PRIVATE CTA
+       ========================= */
+
+    .private-cta {
+        padding: 65px 0;
+    }
+
+    .private-cta-container {
+        width: calc(100% - 64px);
+        max-width: 900px;
+
+        min-height: 400px;
+
+        padding: 50px 40px;
+    }
+
+    .private-cta-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .private-cta-description {
+        max-width: 580px;
+    }
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   821px — 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    /* =========================
+       GLOBAL CONTAINER
+       ========================= */
+
+    .hero-container,
+    .featured-container,
+    .heritage-container,
+    .eras-container,
+    .restoration-container,
+    .stories-container,
+    .philosophy-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero-section {
+        height: auto;
+        min-height: auto;
+        margin-top: 78px;
+        padding: 70px 0 80px;
+    }
+
+    .hero-container {
+        min-height: auto;
+
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 40px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3.5rem, 6vw, 4.8rem);
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .hero-actions {
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        min-height: 50px;
+        padding: 0 20px;
+    }
+
+    .hero-visual {
+        height: 560px;
+    }
+
+    .hero-image-wrapper img {
+        border-radius: 42px;
+    }
+
+
+    /* =========================
+       FEATURED
+       ========================= */
+
+    .featured-section {
+        padding: 95px 0;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header h2,
+    .eras-section .section-header h2,
+    .restoration-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .furniture-image {
+        height: 360px;
+    }
+
+    .furniture-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .furniture-content p {
+        font-size: 0.75rem;
+    }
+
+
+    /* =========================
+       HERITAGE
+       ========================= */
+
+    .heritage-section {
+        padding: 95px 0;
+    }
+
+    .heritage-container {
+        grid-template-columns: 1fr 0.95fr;
+        gap: 50px;
+    }
+
+    .heritage-image {
+        height: 570px;
+    }
+
+    .heritage-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .heritage-intro {
+        font-size: 0.88rem;
+    }
+
+    .heritage-description {
+        font-size: 0.78rem;
+    }
+
+    .heritage-stats {
+        margin-top: 32px;
+    }
+
+    .heritage-stat {
+        padding: 20px 8px;
+    }
+
+    .heritage-stat strong {
+        font-size: 2.15rem;
+    }
+
+
+    /* =========================
+       ERAS
+       ========================= */
+
+    .eras-section {
+        padding: 95px 0;
+    }
+
+    .eras-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .era-card {
+        height: 440px;
+    }
+
+    .era-content {
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+    }
+
+    .era-content h3 {
+        font-size: 2.15rem;
+    }
+
+
+    /* =========================
+       RESTORATION
+       ========================= */
+
+    .restoration-section {
+        padding: 95px 0;
+    }
+
+    .restoration-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .restoration-card {
+        min-height: 270px;
+        padding: 25px;
+    }
+
+    .restoration-card-content {
+        margin-top: 50px;
+    }
+
+    .restoration-card-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .restoration-card-content p {
+        font-size: 0.75rem;
+    }
+
+
+    /* =========================
+       STORIES
+       ========================= */
+
+    .stories-section {
+        padding: 95px 0;
+    }
+
+    .stories-container {
+        grid-template-columns: 0.75fr 1.25fr;
+        gap: 40px;
+    }
+
+    .stories-intro {
+        max-width: 100%;
+    }
+
+    .stories-intro h2 {
+        font-size: 2.65rem;
+    }
+
+    .stories-description {
+        font-size: 0.82rem;
+    }
+
+    .stories-layout {
+        grid-template-columns: 1.55fr 0.75fr;
+        gap: 10px;
+
+        min-height: 470px;
+    }
+
+    .story-featured {
+        min-height: 470px;
+    }
+
+    .story-featured-content {
+        padding: 24px;
+    }
+
+    .story-featured h3 {
+        font-size: 2.35rem;
+    }
+
+    .story-small-grid {
+        gap: 10px;
+    }
+
+    .story-small-content {
+        padding: 17px;
+    }
+
+    .story-small h3 {
+        font-size: 1.4rem;
+    }
+
+
+    /* =========================
+       PHILOSOPHY
+       ========================= */
+
+    .philosophy-section {
+        padding: 105px 0;
+    }
+
+    .philosophy-container {
+        min-height: auto;
+    }
+
+    .philosophy-intro {
+        max-width: 780px;
+    }
+
+    .philosophy-intro h2 {
+        font-size: 2.8rem;
+    }
+
+    .philosophy-description {
+        max-width: 650px;
+    }
+
+    .philosophy-points {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 65px;
+    }
+
+    .philosophy-item {
+        min-height: 235px;
+        padding: 30px 25px 35px;
+    }
+
+    .philosophy-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .philosophy-content p {
+        font-size: 0.78rem;
+    }
+
+
+    /* =========================
+       PRIVATE CTA
+       ========================= */
+
+    .private-cta {
+        padding: 65px 0;
+    }
+
+    .private-cta-container {
+        width: calc(100% - 80px);
+        max-width: 950px;
+
+        min-height: 410px;
+
+        padding: 55px 45px;
+    }
+
+    .private-cta-content h2 {
+        font-size: 3.4rem;
+    }
+
+    .private-cta-description {
+        max-width: 600px;
+    }
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+   =========================================================
+   IMPORTANT:
+   This comes AFTER the iPad Pro query because
+   1024px also matches 821px — 1024px.
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+    /* =========================
+       GLOBAL CONTAINER
+       ========================= */
+
+    .hero-container,
+    .featured-container,
+    .heritage-container,
+    .eras-container,
+    .restoration-container,
+    .stories-container,
+    .philosophy-container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero-section {
+        height: auto;
+        min-height: auto;
+
+        margin-top: 78px;
+        padding: 50px 0 60px;
+    }
+
+    .hero-container {
+        min-height: auto;
+
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+        line-height: 0.92;
+    }
+
+    .hero-description {
+        margin: 22px 0 25px;
+        font-size: 0.82rem;
+        line-height: 1.65;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        min-height: 46px;
+        padding: 0 18px;
+        font-size: 0.7rem;
+    }
+
+    .hero-visual {
+        height: 420px;
+    }
+
+    .hero-image-wrapper img {
+        border-radius: 35px;
+    }
+
+
+    /* =========================
+       FEATURED
+       ========================= */
+
+    .featured-section {
+        padding: 65px 0;
+    }
+
+    .section-header {
+        margin-bottom: 35px;
+    }
+
+    .section-header h2,
+    .eras-section .section-header h2,
+    .restoration-header h2 {
+        font-size: 2.4rem;
+    }
+
+    .section-header p,
+    .eras-section .section-header p,
+    .restoration-header p {
+        margin-top: 16px;
+        font-size: 0.8rem;
+        line-height: 1.65;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .furniture-image {
+        height: 300px;
+    }
+
+    .furniture-content {
+        padding-top: 15px;
+    }
+
+    .furniture-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .furniture-content p {
+        margin: 9px 0 14px;
+        font-size: 0.68rem;
+        line-height: 1.55;
+    }
+
+    .featured-footer {
+        margin-top: 35px;
+    }
+
+
+    /* =========================
+       HERITAGE
+       ========================= */
+
+    .heritage-section {
+        padding: 65px 0;
+    }
+
+    .heritage-container {
+        grid-template-columns: 1fr 0.95fr;
+        gap: 40px;
+    }
+
+    .heritage-image {
+        height: 450px;
+    }
+
+    .heritage-content h2 {
+        font-size: 2.4rem;
+    }
+
+    .heritage-intro {
+        margin: 18px 0 10px;
+        font-size: 0.78rem;
+        line-height: 1.65;
+    }
+
+    .heritage-description {
+        font-size: 0.7rem;
+        line-height: 1.65;
+    }
+
+    .heritage-stats {
+        margin-top: 25px;
+    }
+
+    .heritage-stat {
+        padding: 15px 7px;
+    }
+
+    .heritage-stat strong {
+        font-size: 1.9rem;
+    }
+
+    .heritage-stat span {
+        margin-top: 6px;
+        font-size: 0.58rem;
+    }
+
+    .heritage-link {
+        margin-top: 22px;
+    }
+
+
+    /* =========================
+       ERAS
+       ========================= */
+
+    .eras-section {
+        padding: 65px 0;
+    }
+
+    .eras-section .section-header {
+        margin-bottom: 35px;
+    }
+
+    .eras-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .era-card {
+        height: 350px;
+    }
+
+    .era-content {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .era-period {
+        margin-bottom: 5px;
+        font-size: 0.6rem;
+    }
+
+    .era-content h3 {
+        font-size: 1.85rem;
+    }
+
+    .era-link {
+        margin-top: 10px;
+        font-size: 0.66rem;
+    }
+
+
+    /* =========================
+       RESTORATION
+       ========================= */
+
+    .restoration-section {
+        padding: 65px 0;
+    }
+
+    .restoration-header {
+        margin-bottom: 35px;
+    }
+
+    .restoration-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .restoration-card {
+        min-height: 225px;
+        padding: 20px;
+    }
+
+    .restoration-card-content {
+        margin-top: 35px;
+    }
+
+    .restoration-card-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .restoration-card-content p {
+        margin-top: 10px;
+        font-size: 0.68rem;
+        line-height: 1.6;
+    }
+
+    .restoration-card-top svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .restoration-footer {
+        margin-top: 35px;
+    }
+
+
+    /* =========================
+       STORIES
+       ========================= */
+
+    .stories-section {
+        padding: 65px 0;
+    }
+
+    .stories-container {
+        grid-template-columns: 0.72fr 1.28fr;
+        gap: 35px;
+    }
+
+    .stories-intro h2 {
+        font-size: 2.35rem;
+    }
+
+    .stories-description {
+        margin-bottom: 25px;
+        font-size: 0.75rem;
+        line-height: 1.65;
+    }
+
+    .stories-layout {
+        grid-template-columns: 1.55fr 0.75fr;
+        gap: 8px;
+
+        min-height: 390px;
+    }
+
+    .story-featured {
+        min-height: 390px;
+    }
+
+    .story-small-grid {
+        gap: 8px;
+    }
+
+    .story-featured-content {
+        padding: 20px;
+    }
+
+    .story-featured h3 {
+        font-size: 2rem;
+    }
+
+    .story-period {
+        font-size: 0.62rem;
+    }
+
+    .story-link {
+        margin-top: 14px;
+        font-size: 0.64rem;
+    }
+
+    .story-small-content {
+        padding: 15px;
+    }
+
+    .story-small h3 {
+        font-size: 1.25rem;
+    }
+
+
+    /* =========================
+       PHILOSOPHY
+       ========================= */
+
+    .philosophy-section {
+        padding: 75px 0;
+    }
+
+    .philosophy-intro h2 {
+        font-size: 2.4rem;
+    }
+
+    .philosophy-description {
+        max-width: 620px;
+        margin-top: 20px;
+        font-size: 0.76rem;
+        line-height: 1.7;
+    }
+
+    .philosophy-points {
+        margin-top: 50px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .philosophy-item {
+        min-height: 205px;
+        padding: 25px 22px 30px;
+    }
+
+    .philosophy-number {
+        top: 22px;
+        right: 22px;
+    }
+
+    .philosophy-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 20px;
+    }
+
+    .philosophy-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .philosophy-content p {
+        font-size: 0.68rem;
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       PRIVATE CTA
+       ========================= */
+
+    .private-cta {
+        padding: 50px 0;
+    }
+
+    .private-cta-container {
+        width: calc(100% - 70px);
+        max-width: 900px;
+
+        min-height: 330px;
+
+        padding: 40px 35px;
+    }
+
+    .private-cta-content h2 {
+        font-size: 3rem;
+    }
+
+    .private-cta-description {
+        max-width: 560px;
+        margin-top: 15px;
+        font-size: 0.75rem;
+        line-height: 1.65;
+    }
+
+    .private-cta-actions {
+        margin-top: 20px;
+    }
+
+    .private-cta-primary,
+    .private-cta-secondary {
+        min-height: 44px;
+        padding: 0 18px;
+        font-size: 0.68rem;
+    }
+
+    .private-cta-divider {
+        margin: 22px auto 15px;
+    }
+
+    .private-cta-eras {
+        font-size: 0.56rem;
+    }
+}

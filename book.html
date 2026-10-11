@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F5F1E8" />
+
+  <link rel="icon" href="images/logo.png" />
+
+    <title>Apointment</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="book.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+  </head>
+
+  <body>
+    <section class="ve-booking-section" id="booking-page">
+      <!-- FLOATING PAGE CONTROLS -->
+      <div class="ve-booking-controls">
+       <!-- RTL button -->
+<button
+  type="button"
+  class="ve-booking-control-btn"
+  id="rtlToggle"
+  aria-label="Switch to right-to-left mode"
+  title="RTL Mode"
+  aria-pressed="false"
+>
+  <i data-lucide="arrow-left-right"></i>
+</button>
+
+<!-- Dark mode button -->
+<button
+  type="button"
+  class="ve-booking-control-btn"
+  id="darkToggle"
+  aria-label="Switch to dark mode"
+  title="Dark Mode"
+  aria-pressed="false"
+>
+  <i data-lucide="moon"></i>
+</button>
+      </div>
+
+      <div class="ve-booking-container">
+        <!-- CENTERED VINTAGE ERA LOGO -->
+        <div class="ve-booking-brand">
+          <div class="logo">
+            <a href="index.html" aria-label="Vintage Era Home">
+              <img src="images/logo.png" alt="Vintage Era Logo" />
+            </a>
+
+            <div
+              class="logo-text"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>Vintage<span class="era">Era</span></h1>
+              <p>Antique &amp; Vintage Furniture</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTRODUCTION -->
+        <div class="ve-booking-intro">
+          <div class="ve-booking-badge">PRIVATE VIEWING APPOINTMENT</div>
+
+          <h2>
+            Discover Your Next<br />
+            <span>Timeless Heirloom.</span>
+          </h2>
+
+          <p>
+            Every antique has a story waiting to be discovered. Tell us about
+            your visit, and let us help you experience the character and
+            craftsmanship of our collection in person.
+          </p>
+        </div>
+
+        <!-- BOOKING FORM CARD -->
+        <div class="ve-booking-card">
+          <div class="ve-booking-inner">
+            <!-- FORM HEADER -->
+            <div class="ve-booking-header">
+              <span class="ve-booking-eyebrow">YOUR VISIT</span>
+
+              <h3>Book a Private Viewing</h3>
+
+              <p>
+                Share your preferences and choose a convenient time for your
+                visit.
+              </p>
+            </div>
+
+            <!-- FORM -->
+            <form class="ve-viewing-form" id="veViewingForm" novalidate>
+              <!-- ROW 01 -->
+              <div class="ve-form-row">
+                <div class="ve-form-field">
+                  <label for="veFullName"> Full Name <span>*</span> </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="user-round"></i>
+
+                    <input
+                      type="text"
+                      id="veFullName"
+                      name="fullName"
+                      placeholder="Enter your full name"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+
+                  <small class="ve-field-error" id="veFullNameError"></small>
+                </div>
+
+                <div class="ve-form-field">
+                  <label for="vePhone"> Phone Number <span>*</span> </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="phone"></i>
+
+                    <input
+                      type="tel"
+                      id="vePhone"
+                      name="phone"
+                      placeholder="+91 XXXXX XXXXX"
+                      autocomplete="tel"
+                      required
+                    />
+                  </div>
+
+                  <small class="ve-field-error" id="vePhoneError"></small>
+                </div>
+              </div>
+
+              <!-- ROW 02 -->
+              <div class="ve-form-row">
+                <div class="ve-form-field">
+                  <label for="veEmail"> Email Address <span>*</span> </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="mail"></i>
+
+                    <input
+                      type="email"
+                      id="veEmail"
+                      name="email"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+
+                  <small class="ve-field-error" id="veEmailError"></small>
+                </div>
+
+                <div class="ve-form-field">
+                  <label for="veVisitors">
+                    Number of Visitors <span>*</span>
+                  </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="users"></i>
+
+                    <select id="veVisitors" name="visitors" required>
+                      <option value="" disabled selected>
+                        Select visitors
+                      </option>
+                      <option value="1">1 visitor</option>
+                      <option value="2">2 visitors</option>
+                      <option value="3">3 visitors</option>
+                      <option value="4">4 visitors</option>
+                      <option value="5+">5 or more visitors</option>
+                    </select>
+
+                    <i data-lucide="chevron-down" class="ve-select-arrow"></i>
+                  </div>
+
+                  <small class="ve-field-error" id="veVisitorsError"></small>
+                </div>
+              </div>
+
+              <!-- ROW 03 -->
+              <div class="ve-form-row">
+                <div class="ve-form-field">
+                  <label for="veBookingDate">
+                    Preferred Date <span>*</span>
+                  </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="calendar-days"></i>
+
+                    <input
+                      type="date"
+                      id="veBookingDate"
+                      name="bookingDate"
+                      required
+                    />
+                  </div>
+
+                  <small class="ve-field-error" id="veBookingDateError"></small>
+                </div>
+
+                <div class="ve-form-field">
+                  <label for="veBookingTime">
+                    Preferred Time <span>*</span>
+                  </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="clock"></i>
+
+                    <select id="veBookingTime" name="bookingTime" required>
+                      <option value="" disabled selected>Choose a time</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="11:00 AM">11:00 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="02:00 PM">02:00 PM</option>
+                      <option value="03:00 PM">03:00 PM</option>
+                      <option value="04:00 PM">04:00 PM</option>
+                      <option value="05:00 PM">05:00 PM</option>
+                    </select>
+
+                    <i data-lucide="chevron-down" class="ve-select-arrow"></i>
+                  </div>
+
+                  <small class="ve-field-error" id="veBookingTimeError"></small>
+                </div>
+              </div>
+
+              <!-- ROW 04 -->
+              <div class="ve-form-row">
+                <div class="ve-form-field">
+                  <label for="veInterest">
+                    Area of Interest <span>*</span>
+                  </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="armchair"></i>
+
+                    <select id="veInterest" name="interest" required>
+                      <option value="" disabled selected>
+                        Select your interest
+                      </option>
+                      <option value="Antique Furniture">
+                        Antique Furniture
+                      </option>
+                      <option value="Vintage Furniture">
+                        Vintage Furniture
+                      </option>
+                      <option value="Victorian and Edwardian">
+                        Victorian &amp; Edwardian
+                      </option>
+                      <option value="Art Deco and Mid-Century">
+                        Art Deco &amp; Mid-Century
+                      </option>
+                      <option value="Specific Piece">A Specific Piece</option>
+                      <option value="Restoration Services">
+                        Restoration Services
+                      </option>
+                      <option value="General Exploration">
+                        General Exploration
+                      </option>
+                    </select>
+
+                    <i data-lucide="chevron-down" class="ve-select-arrow"></i>
+                  </div>
+
+                  <small class="ve-field-error" id="veInterestError"></small>
+                </div>
+
+                <div class="ve-form-field">
+                  <label for="vePieceName"> Specific Piece or Reference </label>
+
+                  <div class="ve-input-wrap">
+                    <i data-lucide="search"></i>
+
+                    <input
+                      type="text"
+                      id="vePieceName"
+                      name="pieceName"
+                      placeholder="Optional product name"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- MESSAGE -->
+              <div class="ve-form-field ve-form-full">
+                <label for="veBookingMessage"> Additional Message </label>
+
+                <div class="ve-textarea-wrap">
+                  <i data-lucide="notebook-pen"></i>
+
+                  <textarea
+                    id="veBookingMessage"
+                    name="message"
+                    rows="4"
+                    placeholder="Tell us about the pieces you are interested in or any questions you have..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- SUBMIT -->
+              <div class="ve-form-submit">
+                <button type="submit" class="ve-form-submit-btn">
+                  <span>Request a Viewing</span>
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+
+                <p>
+                  <i data-lucide="shield-check"></i>
+                  Your details are used to handle your viewing enquiry.
+                </p>
+
+                <div
+                  class="ve-form-feedback"
+                  id="veFormFeedback"
+                  role="status"
+                  aria-live="polite"
+                  hidden
+                ></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- BOTTOM BRAND SIGNATURE -->
+      
+      </div>
+    </section>
+        <script src="global.js"></script>
+    <script src="book.js"></script>
+  </body>
+</html>

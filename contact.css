@@ -1,0 +1,2007 @@
+/* =========================================
+   SECTION 1 — CONTACT HERO
+   Uses existing global theme variables
+   ========================================= */
+
+.ve-contact-hero {
+  width: 100%;
+  margin-top: 78px;
+  overflow: hidden;
+  background: var(--site-bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.ve-contact-hero *,
+.ve-contact-hero *::before,
+.ve-contact-hero *::after {
+  box-sizing: border-box;
+}
+
+.ve-contact-hero-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 78px);
+  margin: 0 auto;
+  padding: 65px 55px;
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+/* LEFT CONTENT */
+
+.ve-contact-hero-content {
+  min-width: 0;
+  max-width: 650px;
+}
+
+.ve-contact-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 25px;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  line-height: 1.7;
+}
+
+.ve-contact-hero-title {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 0.99;
+}
+
+.ve-contact-hero-title span {
+  display: block;
+  margin-top: 12px;
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.ve-contact-hero-description {
+  max-width: 510px;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.95;
+}
+
+.ve-contact-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.ve-contact-hero-primary,
+.ve-contact-hero-secondary {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ve-contact-hero-primary {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: #ffffff;
+}
+.ve-contact-hero-primary:hover {
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.ve-contact-hero-secondary {
+  background: transparent;
+  border: 1px solid var(--secondary);
+  color: var(--text);
+}
+
+.ve-contact-hero-secondary:hover {
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: var(--text);
+}
+
+.ve-contact-hero-primary svg,
+.ve-contact-hero-secondary svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.ve-contact-hero-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.7;
+}
+
+.ve-contact-hero-note svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+
+/* RIGHT VISUAL */
+
+.ve-contact-hero-visual {
+  position: relative;
+  min-width: 0;
+  padding: 0 0 65px 35px;
+}
+
+.ve-contact-hero-image {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.ve-contact-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ve-contact-hero-image-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 20px;
+  background: rgba(29, 33, 29, 0.76);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.ve-contact-hero-caption-line {
+  width: 25px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #c89570;
+}
+
+/* =========================================
+   SECTION 2 — HOW WE CAN HELP
+   ========================================= */
+
+.ve-contact-help {
+  width: 100%;
+  overflow: hidden;
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.ve-contact-help *,
+.ve-contact-help *::before,
+.ve-contact-help *::after {
+  box-sizing: border-box;
+}
+
+.ve-contact-help-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+  margin: 0 auto;
+  padding: 85px 55px 70px;
+}
+
+/* HEADING */
+
+.ve-contact-help-heading {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.ve-contact-help-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  line-height: 1.7;
+}
+
+
+
+.ve-contact-help-title {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.ve-contact-help-title span {
+  color: var(--primary);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.ve-contact-help-description {
+  max-width: 600px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/* CARD GRID */
+
+.ve-contact-help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+/* INDIVIDUAL CARD */
+
+.ve-contact-help-card {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 30px 28px 32px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--site-bg);
+}
+
+.ve-contact-help-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.ve-contact-help-number {
+  color: var(--secondary);
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.ve-contact-help-icon {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+}
+
+.ve-contact-help-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+}
+
+.ve-contact-help-card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ve-contact-help-category {
+  margin: 0 0 13px;
+  color: var(--secondary);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  line-height: 1.7;
+}
+
+.ve-contact-help-card h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 2.2vw, 2.05rem);
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.ve-contact-help-card-content > p:not(.ve-contact-help-category) {
+  margin: 17px 0 26px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.ve-contact-help-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.7;
+  text-decoration: none;
+}
+.ve-contact-help-link:hover{
+    color: var(--secondary);
+}
+
+.ve-contact-help-link svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+
+/* FEATURED MIDDLE CARD */
+
+.ve-contact-help-card-featured {
+  border-color: var(--secondary);
+}
+
+.ve-contact-help-card-featured .ve-contact-help-icon {
+  border-color: var(--secondary);
+  background: var(--site-bg);
+}
+
+
+
+/* =========================================
+   SECTION 3 — VIEWING APPOINTMENT
+   ========================================= */
+
+.ve-contact-booking {
+  width: 100%;
+  overflow: hidden;
+  background: var(--site-bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.ve-contact-booking *,
+.ve-contact-booking *::before,
+.ve-contact-booking *::after {
+  box-sizing: border-box;
+}
+
+.ve-contact-booking-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 85px 55px;
+}
+
+/* SECTION HEADING */
+
+.ve-contact-booking-heading {
+  max-width: 790px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.ve-contact-booking-eyebrow {
+  margin: 0 0 15px;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  line-height: 1.7;
+}
+
+.ve-contact-booking-title {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.ve-contact-booking-title span {
+  display: block;
+  margin-top: 5px;
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.ve-contact-booking-intro {
+  max-width: 650px;
+  margin: 20px auto 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.95;
+}
+
+/* MAIN LAYOUT */
+
+.ve-contact-booking-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: start;
+  gap: 55px;
+}
+
+/* FORM PANEL */
+
+.ve-contact-booking-form-panel {
+  min-width: 0;
+  padding: 36px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.ve-contact-booking-form-header {
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ve-contact-booking-step {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--secondary);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.ve-contact-booking-form-header h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.ve-contact-booking-form-header p {
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+/* FORM GRID */
+
+.ve-viewing-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 18px;
+}
+
+.ve-viewing-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.ve-viewing-field-full {
+  grid-column: 1 / -1;
+}
+
+.ve-viewing-field label {
+  color: var(--text);
+  font-size: 0.77rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.ve-viewing-field label span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.ve-viewing-field input,
+.ve-viewing-field select,
+.ve-viewing-field textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 49px;
+  padding: 13px 14px;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  outline: none;
+  background: var(--site-bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.81rem;
+  line-height: 1.6;
+}
+
+.ve-viewing-field textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+
+.ve-viewing-field input::placeholder,
+.ve-viewing-field textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+.ve-viewing-field input:focus,
+.ve-viewing-field select:focus,
+.ve-viewing-field textarea:focus {
+  border-color: var(--secondary);
+  outline: 1px solid var(--secondary);
+  outline-offset: 0;
+}
+
+.ve-viewing-field input[type="date"] {
+  color-scheme: light;
+}
+
+body.dark-mode .ve-viewing-field input[type="date"] {
+  color-scheme: dark;
+}
+
+/* PRIVACY NOTE */
+
+.ve-viewing-privacy-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 23px 0 0;
+  color: var(--muted);
+  font-size: 0.73rem;
+  line-height: 1.8;
+}
+
+.ve-viewing-privacy-note svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--secondary);
+}
+
+/* SUBMIT BUTTON */
+
+.ve-viewing-submit {
+  display: inline-flex;
+  width: 100%;
+  min-height: 53px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 14px 22px;
+  border: 1px solid var(--primary);
+  border-radius: 0;
+  background: var(--primary);
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.79rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ve-viewing-submit:hover{
+    background: var(--secondary);
+    border: var(--secondary);
+}
+
+.ve-viewing-submit svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* FORM FEEDBACK */
+
+.ve-viewing-feedback {
+  display: none;
+  margin: 18px 0 0;
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.8rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.ve-viewing-feedback.is-visible {
+  display: block;
+}
+
+/* RIGHT EDITORIAL ASIDE */
+
+.ve-contact-booking-aside {
+  min-width: 0;
+}
+
+.ve-booking-aside-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.ve-booking-aside-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ve-booking-image-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 14px 17px;
+  background: rgba(29, 33, 29, 0.76);
+  color: #ffffff;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.7;
+}
+
+.ve-booking-aside-content {
+  padding: 30px 0 0;
+}
+
+.ve-booking-aside-eyebrow {
+  margin: 0 0 13px;
+  color: var(--secondary);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.7;
+}
+
+.ve-booking-aside-content > h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.ve-booking-aside-content > p:not(.ve-booking-aside-eyebrow) {
+  margin: 17px 0 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.95;
+}
+
+/* BENEFITS */
+
+.ve-booking-benefit {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: start;
+  gap: 15px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+
+.ve-booking-benefit-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+}
+
+.ve-booking-benefit-icon svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.5;
+}
+
+.ve-booking-benefit h4 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.ve-booking-benefit p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   SECTION 4 — CONTACT DETAILS & GOOGLE MAPS
+   ========================================= */
+
+.ve-contact-location {
+  width: 100%;
+  overflow: hidden;
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.ve-contact-location *,
+.ve-contact-location *::before,
+.ve-contact-location *::after {
+  box-sizing: border-box;
+}
+
+.ve-contact-location-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 85px 55px;
+}
+
+/* SECTION HEADING */
+
+.ve-contact-location-heading {
+  max-width: 790px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.ve-contact-location-eyebrow {
+  margin: 0 0 15px;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  line-height: 1.7;
+}
+
+.ve-contact-location-title {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.ve-contact-location-title span {
+  display: block;
+  margin-top: 5px;
+  color: var(--primary);
+  
+}
+
+.ve-contact-location-intro {
+  max-width: 640px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.95;
+}
+
+/* MAIN TWO-COLUMN LAYOUT */
+
+.ve-contact-location-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: stretch;
+  gap: 55px;
+}
+
+/* LEFT CONTACT INFORMATION */
+
+.ve-contact-location-info {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.ve-contact-location-index {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--secondary);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.7;
+}
+
+
+
+
+
+/* CONTACT DETAIL ITEMS */
+
+.ve-contact-location-item {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 45px minmax(0, 1fr);
+  align-items: start;
+  gap: 15px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.ve-contact-location-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+}
+
+.ve-contact-location-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+}
+
+.ve-contact-location-item-content {
+  min-width: 0;
+}
+
+.ve-contact-location-item-content h4 {
+  margin: 0 0 7px;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.ve-contact-location-item-content p,
+.ve-contact-location-item-content a {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.81rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.ve-contact-location-item-content a {
+  text-decoration: none;
+}
+
+/* LEFT CTA BUTTON */
+
+.ve-contact-location-button {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 13px 21px;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 0.77rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.ve-contact-location-button:hover{
+    background: var(--secondary);
+    border: var(--secondary);
+}
+
+.ve-contact-location-button svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* RIGHT MAP PANEL */
+
+.ve-contact-location-map-wrap {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.ve-contact-location-map-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.ve-contact-location-map-eyebrow {
+  margin: 0 0 7px;
+  color: var(--secondary);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  line-height: 1.7;
+}
+
+.ve-contact-location-map-heading h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.ve-contact-location-map-mark {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+}
+
+.ve-contact-location-map-mark svg {
+  width: 21px;
+  height: 21px;
+}
+
+/* MAP PLACEHOLDER */
+
+
+
+.ve-contact-location-map-pin {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+}
+
+.ve-contact-location-map-pin svg {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.4;
+}
+
+
+
+.ve-contact-location-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--secondary);
+  font-size: 0.77rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ve-contact-location-map-link svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* REAL MAP IFRAME */
+
+.ve-contact-location-map-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 410px;
+  flex: 1;
+  border: 1px solid var(--border);
+}
+
+/* MAP FOOTER */
+
+.ve-contact-location-map-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.8;
+}
+
+.ve-contact-location-map-footer svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--secondary);
+}
+
+/* =========================================
+   SECTION 5 — FINAL CONTACT CTA
+   ========================================= */
+
+.ve-contact-cta {
+  width: 100%;
+  overflow: hidden;
+  background: var(--site-bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.ve-contact-cta *,
+.ve-contact-cta *::before,
+.ve-contact-cta *::after {
+  box-sizing: border-box;
+}
+
+.ve-contact-cta-container {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 440px;
+  margin: 0 auto;
+  padding: 65px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DOUBLE-BORDER FRAME */
+
+.ve-contact-cta-frame {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 55px 40px;
+  border: 1px solid var(--secondary);
+  outline: 1px solid var(--secondary);
+  outline-offset: -10px;
+  text-align: center;
+}
+
+/* EMBLEM */
+
+.ve-contact-cta-emblem {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+}
+
+.ve-contact-cta-emblem svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 1.4;
+}
+
+/* EYEBROW */
+
+.ve-contact-cta-eyebrow {
+  margin: 0 0 17px;
+  color: var(--secondary);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  line-height: 1.8;
+}
+
+/* TITLE */
+
+.ve-contact-cta-title {
+  max-width: 850px;
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.06;
+}
+
+.ve-contact-cta-title span {
+  display: block;
+  margin-top: 6px;
+  color: var(--primary);
+
+}
+
+/* DESCRIPTION */
+
+.ve-contact-cta-description {
+  max-width: 610px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.95;
+}
+
+/* BUTTONS */
+
+.ve-contact-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.ve-contact-cta-primary,
+.ve-contact-cta-secondary {
+  display: inline-flex;
+  min-height: 51px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 23px;
+  border: 1px solid var(--secondary);
+  font-family: var(--font-body);
+  border-radius: 6px;
+  font-size: 0.77rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.ve-contact-cta-primary {
+  background: var(--primary);
+  border: var(--primary);
+  color: #ffffff;
+}
+.ve-contact-cta-primary:hover{
+  background: var(--secondary);
+  color: #ffffff;
+}
+
+.ve-contact-cta-secondary {
+  background: transparent;
+  color: var(--text);
+}
+.ve-contact-cta-secondary:hover {
+  background: var(--primary);
+  color: var(--site-bg);
+}
+
+.ve-contact-cta-primary svg,
+.ve-contact-cta-secondary svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+/* FOOTER SIGNATURE */
+
+.ve-contact-cta-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 38px;
+}
+
+.ve-contact-cta-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.61rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.ve-contact-cta-footer-line {
+  width: 35px;
+  height: 1px;
+  flex-shrink: 0;
+  background: var(--border);
+}
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px–740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* ---------- Shared section containers ---------- */
+
+  .ve-contact-hero-container,
+  .ve-contact-help-container,
+  .ve-contact-booking-container,
+  .ve-contact-location-container,
+  .ve-contact-cta-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    margin: 0 auto;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .ve-contact-hero,
+  .ve-contact-help,
+  .ve-contact-booking,
+  .ve-contact-location,
+  .ve-contact-cta {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* ---------- Section 1: Contact Hero ---------- */
+
+  .ve-contact-hero {
+    margin-top: 78px;
+  }
+
+  .ve-contact-hero-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .ve-contact-hero-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .ve-contact-hero-eyebrow {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+  }
+
+  .ve-contact-hero-title {
+    font-size: clamp(2.6rem, 10vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-hero-title span {
+    margin-top: 8px;
+  }
+
+  .ve-contact-hero-description {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    font-size: 0.88rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-hero-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 11px;
+    margin-top: 24px;
+  }
+
+  .ve-contact-hero-primary,
+  .ve-contact-hero-secondary {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 12px 14px;
+    gap: 9px;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .ve-contact-hero-note {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9px;
+    margin-top: 22px;
+    font-size: 0.72rem;
+    text-align: left;
+  }
+
+  .ve-contact-hero-note svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .ve-contact-hero-visual {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .ve-contact-hero-image {
+    width: 100%;
+    height: clamp(260px, 78vw, 380px);
+  }
+
+  .ve-contact-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .ve-contact-hero-image-caption {
+    gap: 9px;
+    padding: 13px 14px;
+    font-size: 0.57rem;
+    letter-spacing: 0.09em;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-hero-caption-line {
+    width: 20px;
+  }
+
+  /* ---------- Section 2: How We Can Help ---------- */
+
+  .ve-contact-help-container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .ve-contact-help-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .ve-contact-help-eyebrow {
+    justify-content: center;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+  }
+
+  .ve-contact-help-title {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-help-description {
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 0.88rem;
+    line-height: 1.8;
+  }
+
+  .ve-contact-help-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .ve-contact-help-card {
+    width: 100%;
+    min-width: 0;
+    padding: 22px 19px 24px;
+  }
+
+  .ve-contact-help-card-top {
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .ve-contact-help-number {
+    font-size: 1.3rem;
+  }
+
+  .ve-contact-help-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .ve-contact-help-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .ve-contact-help-card-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ve-contact-help-category {
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  .ve-contact-help-card h3 {
+    font-size: clamp(1.7rem, 7vw, 2rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-help-card-content > p:not(.ve-contact-help-category) {
+    margin: 13px 0 21px;
+    font-size: 0.86rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-help-link {
+    gap: 8px;
+    padding-top: 13px;
+    font-size: 0.7rem;
+    overflow-wrap: anywhere;
+  }
+
+  /* ---------- Section 3: Viewing Appointment ---------- */
+
+  .ve-contact-booking-container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .ve-contact-booking-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .ve-contact-booking-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+  }
+
+  .ve-contact-booking-title {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-booking-title span {
+    margin-top: 7px;
+  }
+
+  .ve-contact-booking-intro {
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 0.88rem;
+    line-height: 1.8;
+  }
+
+  .ve-contact-booking-layout {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .ve-contact-booking-form-panel {
+    width: 100%;
+    min-width: 0;
+    padding: 21px 16px;
+  }
+
+  .ve-contact-booking-form-header {
+    margin-bottom: 23px;
+    padding-bottom: 19px;
+  }
+
+  .ve-contact-booking-step {
+    margin-bottom: 9px;
+    font-size: 0.62rem;
+    line-height: 1.7;
+  }
+
+  .ve-contact-booking-form-header h3 {
+    font-size: clamp(1.7rem, 7vw, 2.1rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-booking-form-header p {
+    margin-top: 9px;
+    font-size: 0.78rem;
+    line-height: 1.8;
+  }
+
+  .ve-viewing-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .ve-viewing-field,
+  .ve-viewing-field-full {
+    width: 100%;
+    min-width: 0;
+    grid-column: 1 / -1;
+  }
+
+  .ve-viewing-field label {
+    font-size: 0.74rem;
+  }
+
+  .ve-viewing-field input,
+  .ve-viewing-field select,
+  .ve-viewing-field textarea {
+    width: 100%;
+    min-width: 0;
+    min-height: 47px;
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+
+  .ve-viewing-field textarea {
+    min-height: 115px;
+  }
+
+  .ve-viewing-privacy-note {
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: 0.68rem;
+    line-height: 1.75;
+  }
+
+  .ve-viewing-privacy-note svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .ve-viewing-submit {
+    width: 100%;
+    min-height: 49px;
+    margin-top: 20px;
+    padding: 12px;
+    gap: 9px;
+    font-size: 0.72rem;
+  }
+
+  .ve-viewing-feedback {
+    padding: 12px;
+    font-size: 0.75rem;
+    overflow-wrap: anywhere;
+  }
+
+  /* Booking information panel */
+
+  .ve-contact-booking-aside {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ve-booking-aside-image {
+    width: 100%;
+    height: clamp(230px, 65vw, 320px);
+  }
+
+  .ve-booking-aside-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ve-booking-image-caption {
+    padding: 12px 13px;
+    font-size: 0.57rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-booking-aside-content {
+    padding-top: 23px;
+  }
+
+  .ve-booking-aside-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.11em;
+  }
+
+  .ve-booking-aside-content > h3 {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-booking-aside-content > p:not(.ve-booking-aside-eyebrow) {
+    margin: 14px 0 20px;
+    font-size: 0.86rem;
+    line-height: 1.8;
+  }
+
+  .ve-booking-benefit {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 12px;
+    padding: 17px 0;
+  }
+
+  .ve-booking-benefit-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ve-booking-benefit h4 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .ve-booking-benefit p {
+    font-size: 0.81rem;
+    line-height: 1.75;
+  }
+
+  /* ---------- Section 4: Contact Details & Google Maps ---------- */
+
+  .ve-contact-location-container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .ve-contact-location-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .ve-contact-location-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+  }
+
+  .ve-contact-location-title {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-location-title span {
+    margin-top: 7px;
+  }
+
+  .ve-contact-location-intro {
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 0.88rem;
+    line-height: 1.8;
+  }
+
+  .ve-contact-location-layout {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .ve-contact-location-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ve-contact-location-index {
+    margin-bottom: 8px;
+    font-size: 0.62rem;
+  }
+
+  .ve-contact-location-item {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 12px;
+    padding: 18px 0;
+  }
+
+  .ve-contact-location-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ve-contact-location-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .ve-contact-location-item-content {
+    min-width: 0;
+  }
+
+  .ve-contact-location-item-content h4 {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+  }
+
+  .ve-contact-location-item-content p,
+  .ve-contact-location-item-content a {
+    font-size: 0.78rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-location-button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 22px;
+    padding: 12px 14px;
+    gap: 8px;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  /* Map panel */
+
+  .ve-contact-location-map-wrap {
+    width: 100%;
+    min-width: 0;
+    padding: 16px;
+  }
+
+  .ve-contact-location-map-heading {
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .ve-contact-location-map-eyebrow {
+    font-size: 0.58rem;
+    letter-spacing: 0.09em;
+  }
+
+  .ve-contact-location-map-heading h3 {
+    font-size: 1.55rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-location-map-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .ve-contact-location-map-mark svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .ve-contact-location-map-pin {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+  }
+
+  .ve-contact-location-map-pin svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ve-contact-location-map-link {
+    gap: 7px;
+    font-size: 0.7rem;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-location-map-wrap iframe {
+    width: 100%;
+    min-width: 0;
+    min-height: 280px;
+    height: 280px;
+    flex: none;
+  }
+
+  .ve-contact-location-map-footer {
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 14px;
+    font-size: 0.68rem;
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-location-map-footer svg {
+    flex-shrink: 0;
+  }
+
+  /* ---------- Section 5: Final Contact CTA ---------- */
+
+  .ve-contact-cta-container {
+    min-height: 0;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .ve-contact-cta-frame {
+    width: 100%;
+    min-width: 0;
+    padding: 40px 17px 27px;
+    outline-offset: -7px;
+  }
+
+  .ve-contact-cta-emblem {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 18px;
+  }
+
+  .ve-contact-cta-emblem svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ve-contact-cta-eyebrow {
+    margin-bottom: 13px;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7;
+  }
+
+  .ve-contact-cta-title {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(2.1rem, 8vw, 2.9rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-cta-title span {
+    margin-top: 8px;
+  }
+
+  .ve-contact-cta-description {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 0.86rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-cta-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .ve-contact-cta-primary,
+  .ve-contact-cta-secondary {
+    width: 100%;
+    min-width: 0;
+    min-height: 47px;
+    padding: 11px 12px;
+    gap: 8px;
+    font-size: 0.69rem;
+    text-align: center;
+  }
+
+  .ve-contact-cta-footer {
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 25px;
+  }
+
+  .ve-contact-cta-footer p {
+    max-width: 100%;
+    font-size: 0.52rem;
+    letter-spacing: 0.08em;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+
+  .ve-contact-cta-footer-line {
+    width: 22px;
+  }
+
+  /* ---------- Optional RTL support ---------- */
+
+  body.rtl .ve-contact-hero-container,
+  body.rtl .ve-contact-help-container,
+  body.rtl .ve-contact-booking-container,
+  body.rtl .ve-contact-location-container,
+  body.rtl .ve-contact-cta-container {
+    direction: rtl;
+  }
+
+  body.rtl .ve-contact-hero-content,
+  body.rtl .ve-contact-help-heading,
+  body.rtl .ve-contact-booking-heading,
+  body.rtl .ve-contact-location-heading,
+  body.rtl .ve-contact-cta-frame {
+    text-align: center;
+  }
+
+  body.rtl .ve-contact-hero-eyebrow {
+    flex-direction: row;
+  }
+
+  body.rtl .ve-contact-hero-actions,
+  body.rtl .ve-contact-cta-actions {
+    align-items: stretch;
+  }
+
+  body.rtl .ve-contact-hero-note {
+    flex-direction: row;
+    text-align: right;
+  }
+
+  body.rtl .ve-contact-help-card-content,
+  body.rtl .ve-contact-booking-form-panel,
+  body.rtl .ve-contact-location-info,
+  body.rtl .ve-booking-aside-content {
+    direction: rtl;
+    text-align: right;
+  }
+
+  body.rtl .ve-contact-help-card-content {
+    align-items: flex-start;
+  }
+
+  body.rtl .ve-contact-help-link {
+    flex-direction: row;
+  }
+
+  body.rtl .ve-viewing-field {
+    text-align: right;
+  }
+
+  body.rtl .ve-viewing-privacy-note {
+    flex-direction: row;
+    text-align: right;
+  }
+
+  body.rtl .ve-contact-location-item {
+    direction: rtl;
+  }
+
+  body.rtl .ve-contact-location-map-heading {
+    flex-direction: row;
+  }
+
+  body.rtl .ve-contact-location-map-footer {
+    flex-direction: row;
+    text-align: right;
+  }
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F5F1E8" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>404</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="404.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <main class="ve-error-page">
+      <!-- THEME AND RTL CONTROLS -->
+      <div class="ve-error-controls">
+        <button
+          type="button"
+          class="ve-error-control-btn"
+          id="rtlToggle"
+          aria-label="Switch to right-to-left mode"
+          title="RTL Mode"
+          aria-pressed="false"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <button
+          type="button"
+          class="ve-error-control-btn"
+          id="darkToggle"
+          aria-label="Switch to dark mode"
+          title="Dark Mode"
+          aria-pressed="false"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+      </div>
+
+      <!-- BRAND -->
+      <a href="index.html" class="ve-error-brand" aria-label="Vintage Era home">
+        <img src="images/logo.png" alt="Vintage Era antique furniture logo" />
+
+        <span class="ve-error-brand-text">
+          <span class="ve-error-brand-name"> Vintage<span>Era</span> </span>
+          <span class="ve-error-brand-tagline">
+            Antique &amp; Vintage Furniture
+          </span>
+        </span>
+      </a>
+
+      <!-- MAIN CONTENT -->
+      <section class="ve-error-content" aria-labelledby="ve-error-title">
+        <div class="ve-error-illustration" aria-hidden="true">
+          <span class="ve-error-number">4</span>
+
+          <div class="ve-error-emblem">
+            <i data-lucide="armchair"></i>
+            <span class="ve-error-emblem-line"></span>
+          </div>
+
+          <span class="ve-error-number">4</span>
+        </div>
+
+        <p class="ve-error-eyebrow">A LITTLE DETOUR IN TIME</p>
+
+        <h1 id="ve-error-title">
+          This Page Has
+          <span>Gone Vintage.</span>
+        </h1>
+
+        <p class="ve-error-description">
+          It seems this page has disappeared into the archives. Don't worry —
+          there are plenty of timeless treasures waiting for you back at Vintage
+          Era.
+        </p>
+
+        <div class="ve-error-actions">
+          <a href="index.html" class="ve-error-home-btn">
+            <span>Back to Home</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <a href="products.html" class="ve-error-collection-link">
+            Explore Collection
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="ve-error-divider">
+          <span></span>
+          <i data-lucide="flower-2"></i>
+          <span></span>
+        </div>
+
+        <p class="ve-error-footer-note">
+          Timeless pieces. Stories that live on.
+        </p>
+      </section>
+
+      <!-- DECORATIVE BACKGROUND DETAILS -->
+      <span
+        class="ve-error-decoration ve-error-decoration-one"
+        aria-hidden="true"
+      ></span>
+      <span
+        class="ve-error-decoration ve-error-decoration-two"
+        aria-hidden="true"
+      ></span>
+    </main>
+
+    <!-- Shared theme and RTL settings -->
+    <script src="global.js" defer></script>
+    <script src="404.js"></script>
+  </body>
+</html>
