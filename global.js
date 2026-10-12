@@ -373,6 +373,80 @@ topButton?.addEventListener(
   }
 );
 
+/* =========================================================
+   ACTIVE NAVIGATION LINKS
+   MAIN NAVIGATION + HOME DROPDOWN
+   ========================================================= */
+
+function setActiveNavLink() {
+  const currentPage = (
+    window.location.pathname.split("/").pop() || "index.html"
+  ).toLowerCase();
+
+  /* Main navigation links */
+  const mainLinks = document.querySelectorAll(
+    ".nav-links > li > a"
+  );
+
+  /* Dropdown links */
+  const dropdownLinks = document.querySelectorAll(
+    ".dropdown-menu a"
+  );
+
+  /* Remove old active states */
+  [...mainLinks, ...dropdownLinks].forEach((link) => {
+    link.classList.remove("active");
+    link.removeAttribute("aria-current");
+  });
+
+  /* Identify the matching dropdown page */
+  let activeDropdownLink = null;
+
+  dropdownLinks.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    const linkPage = href.split("/").pop().split("#")[0].toLowerCase();
+
+    if (linkPage === currentPage) {
+      activeDropdownLink = link;
+    }
+  });
+
+  /* Highlight the matching main navigation link */
+  mainLinks.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    const linkPage = href.split("/").pop().split("#")[0].toLowerCase();
+
+    const isHomeParent =
+      link.parentElement.classList.contains("dropdown") &&
+      activeDropdownLink !== null;
+
+    const isDirectMatch =
+      linkPage === currentPage && !isHomeParent;
+
+    if (isHomeParent || isDirectMatch) {
+      link.classList.add("active");
+
+      if (isDirectMatch) {
+        link.setAttribute("aria-current", "page");
+      }
+    }
+  });
+
+  /* Highlight the specific dropdown item */
+  if (activeDropdownLink) {
+    activeDropdownLink.classList.add("active");
+    activeDropdownLink.setAttribute("aria-current", "page");
+  }
+}
+
+/* Run after the document is ready */
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", setActiveNavLink);
+} else {
+  setActiveNavLink();
+}
+
+
 
 /* =========================================================
    INITIALIZE EVERYTHING

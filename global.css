@@ -551,19 +551,71 @@ h6 {
 }
 
 
+
 /* =========================================================
    ACTIVE NAVIGATION
    ========================================================= */
 
-.nav-links a.active {
-
-  color: var(--secondary);
-
-}
-
-body.dark-mode .nav-links a.active{
+/* Active main navigation link */
+.nav-links > li > a.active {
   color: var(--secondary);
 }
+
+/* Active main navigation underline */
+.nav-links > li > a.active::after {
+  width: 100%;
+  background: var(--secondary);
+  transition: none;
+}
+
+/* Prevent hover effects on active main links */
+.nav-links > li > a.active:hover {
+  color: var(--secondary);
+}
+
+/* Active dropdown link */
+.dropdown-menu li a.active {
+  color: var(--secondary);
+  background: color-mix(
+    in srgb,
+    var(--secondary) 10%,
+    transparent
+  );
+}
+
+/* Underline active dropdown text */
+.dropdown-menu li a.active span {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* Prevent hover changes on active dropdown links */
+.dropdown-menu li a.active:hover {
+  color: var(--secondary);
+  background: color-mix(
+    in srgb,
+    var(--secondary) 10%,
+    transparent
+  );
+}
+
+/* Dark mode */
+body.dark-mode .nav-links > li > a.active,
+body.dark-mode .nav-links > li > a.active:hover,
+body.dark-mode .dropdown-menu li a.active,
+body.dark-mode .dropdown-menu li a.active:hover {
+  color: var(--secondary);
+}
+
+/* Mobile navigation */
+@media (max-width: 1024px) {
+  .nav-links > li > a.active::after {
+    display: none;
+  }
+}
+
 
 
 /* =========================================================
