@@ -375,7 +375,7 @@ topButton?.addEventListener(
 
 /* =========================================================
    ACTIVE NAVIGATION LINKS
-   MAIN NAVIGATION + HOME DROPDOWN
+   MAIN PAGES + DETAILING PAGES + HOME DROPDOWN
    ========================================================= */
 
 function setActiveNavLink() {
@@ -383,23 +383,29 @@ function setActiveNavLink() {
     window.location.pathname.split("/").pop() || "index.html"
   ).toLowerCase();
 
-  /* Main navigation links */
   const mainLinks = document.querySelectorAll(
     ".nav-links > li > a"
   );
 
-  /* Dropdown links */
   const dropdownLinks = document.querySelectorAll(
     ".dropdown-menu a"
   );
 
-  /* Remove old active states */
+  /* Clear previous active states */
   [...mainLinks, ...dropdownLinks].forEach((link) => {
     link.classList.remove("active");
     link.removeAttribute("aria-current");
   });
 
-  /* Identify the matching dropdown page */
+  /* Map detailing pages to their parent navigation pages */
+  const parentPageMap = {
+    "service-d.html": "services.html",
+    "blog-d.html": "blog.html"
+  };
+
+  const parentPage = parentPageMap[currentPage] || currentPage;
+
+  /* Find the matching dropdown link */
   let activeDropdownLink = null;
 
   dropdownLinks.forEach((link) => {
@@ -411,17 +417,16 @@ function setActiveNavLink() {
     }
   });
 
-  /* Highlight the matching main navigation link */
+  /* Highlight main navigation links */
   mainLinks.forEach((link) => {
     const href = link.getAttribute("href") || "";
     const linkPage = href.split("/").pop().split("#")[0].toLowerCase();
 
     const isHomeParent =
       link.parentElement.classList.contains("dropdown") &&
-      activeDropdownLink !== null;
+      ["index.html", "home2.html"].includes(currentPage);
 
-    const isDirectMatch =
-      linkPage === currentPage && !isHomeParent;
+    const isDirectMatch = linkPage === parentPage;
 
     if (isHomeParent || isDirectMatch) {
       link.classList.add("active");
@@ -432,19 +437,30 @@ function setActiveNavLink() {
     }
   });
 
-  /* Highlight the specific dropdown item */
+  /* Highlight the matching Home dropdown item */
   if (activeDropdownLink) {
     activeDropdownLink.classList.add("active");
     activeDropdownLink.setAttribute("aria-current", "page");
+  } else if (["index.html", "home2.html"].includes(currentPage)) {
+    dropdownLinks.forEach((link) => {
+      const href = link.getAttribute("href") || "";
+      const linkPage = href.split("/").pop().split("#")[0].toLowerCase();
+
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+      }
+    });
   }
 }
 
-/* Run after the document is ready */
+/* Initialize active navigation */
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", setActiveNavLink);
 } else {
   setActiveNavLink();
 }
+
 
 
 

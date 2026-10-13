@@ -107,7 +107,7 @@
 .restoration-hero-title span {
   display: block;
   margin-top: 7px;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 /* Description */
@@ -1209,6 +1209,7 @@ body.rtl .restoration-timeline-content p {
   background: var(--site-bg);
   color: var(--text);
   overflow: hidden;
+  margin-bottom: -120px;
 }
 
 /* Section Container — Hero Container Alignment */
@@ -1341,7 +1342,7 @@ body.rtl .restoration-timeline-content p {
 .restoration-cta-secondary {
   background: transparent;
   color: var(--text);
-  border-color: var(--border);
+  border-color: var(--secondary);
 }
 
 .restoration-cta-primary i,

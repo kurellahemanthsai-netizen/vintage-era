@@ -1065,6 +1065,7 @@ body.dark-mode .ve-viewing-field input[type="date"] {
   background: var(--site-bg);
   color: var(--text);
   font-family: var(--font-body);
+  margin-bottom: -90px;
 }
 
 .ve-contact-cta *,

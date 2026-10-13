@@ -101,7 +101,7 @@
 .about-hero-title span {
   display: block;
   margin-top: 8px;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 /* Description */
@@ -1237,6 +1237,7 @@ body.dark-mode .about-hero-bottom-divider {
   overflow: hidden;
   background: var(--site-bg);
   color: var(--text);
+  margin-bottom: -40px;
 }
 
 /* Background */
@@ -1259,6 +1260,7 @@ body.dark-mode .about-hero-bottom-divider {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+
 }
 
 /* Double Border */
@@ -1309,7 +1311,7 @@ body.dark-mode .about-hero-bottom-divider {
 }
 
 .heirloom-cta-title span {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .heirloom-cta-description {
@@ -1359,7 +1361,7 @@ body.dark-mode .about-hero-bottom-divider {
 }
 .heirloom-btn-secondary {
   background: transparent;
-  border: 1px solid rgba(245, 241, 232, 0.65);
+  border: 1px solid var(--secondary);
   color: #f5f1e8;
 }
 .heirloom-btn-secondary:hover {

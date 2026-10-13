@@ -1162,6 +1162,7 @@
   background: var(--site-bg);
   color: var(--text);
   overflow: hidden;
+  margin-bottom: -100px;
 }
 
 .wood-repair-cta-container {
@@ -1286,7 +1287,7 @@
 
 .wood-repair-cta-secondary {
   background: transparent;
-  border: 1px solid var(--border);
+  border: 1px solid var(--secondary);
   color: var(--text);
 }
 

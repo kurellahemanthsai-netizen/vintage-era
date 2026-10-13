@@ -1782,6 +1782,7 @@
 
   margin: 0 auto;
   padding: 60px 55px;
+  margin-bottom: -100px;
 
   display: flex;
   align-items: center;

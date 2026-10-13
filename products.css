@@ -198,7 +198,7 @@
 .ve-products-hero-title span {
   display: block;
   margin-top: 10px;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .ve-products-hero-description {
@@ -888,6 +888,7 @@ body.rtl .ve-products-hero {
 .ve-products-cta {
   padding: 75px 0;
   background: var(--surface);
+  margin-bottom: -60px;
 }
 
 .ve-products-cta .ve-container {
@@ -896,8 +897,11 @@ body.rtl .ve-products-hero {
   align-content: center;
   align-items: center;
   gap: 0 70px;
+  margin-bottom: -55px;
 }
-
+.ve-products-cta{
+  background: var(--site-bg);
+}
 .ve-cta-frame {
   grid-column: 1 / -1;
   padding: 65px 40px;
@@ -990,7 +994,7 @@ body.rtl .ve-products-hero {
 }
 
 .ve-cta-secondary {
-  border: 1px solid var(--border);
+  border: 1px solid var(--secondary);
   background: transparent;
   color: var(--text);
 }

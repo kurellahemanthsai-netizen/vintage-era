@@ -1281,6 +1281,7 @@
   color: var(--text);
   padding: 65px 0 75px;
   overflow: hidden;
+  margin-bottom: -110px;
 }
 
 .blog-cta-container {
@@ -1426,9 +1427,9 @@
   background: transparent;
 }
 .blog-cta-secondary:hover {
-  color: var(--text);
-  border: 1px solid var(--primary);
-  background: transparent;
+  color: var(--surface);
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
 }
 
 /* Bottom signature */
